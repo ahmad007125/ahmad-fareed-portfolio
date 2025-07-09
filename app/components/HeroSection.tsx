@@ -52,7 +52,7 @@ export default function HeroSection() {
                         <ArrowRight className="size-3 pointer-events-none" />
                     </a>
                     <h1 className="max-w-2xl text-4xl font-semibold leading-tight tracking-tight text-foreground lg:text-[2.75rem] lg:leading-[1.1] xl:text-5xl xl:tracking-tighter">
-                        Build your Component Library
+                        Build your Component Library,,,
                     </h1>
                     <p className="max-w-3xl text-base font-normal text-muted-foreground sm:text-lg">
                         A set of beautifully-designed, accessible components and a code distribution
