@@ -41,7 +41,7 @@ export default function HeroSection() {
 
     return(
         <div className="w-full flex items-center justify-between bg-body">
-            <div ref={boxRef} className="container flex sm:flex-row flex-col items-center gap-2 py-8 md:py-16 lg:py-20 mx-auto px-4 xl:gap-4">
+            <div ref={boxRef} className="container flex sm:flex-row flex-col items-center py-12 md:py-16 lg:py-20 mx-auto px-4 gap-12">
                 <div className="hero-content flex flex-col gap-2 sm:w-1/2 w-full">
                     <a
                         href="/docs/components/calendar"

@@ -34,7 +34,7 @@ export default function Home() {
       <NavigationMenuDemo />
       <HeroSection />
 
-      <div className="portfolio-section container flex flex-col mx-auto gap-20 px-4 md:py-16 lg:py-20">
+      <div className="portfolio-section container flex flex-col mx-auto sm:gap-20 gap-12 px-4 md:py-16 lg:py-20 py-12">
         <h2 className="title text-4xl font-bold text-foreground text-center">Portfolio</h2>
         {portfolioItems.map((item, index) => (
           <PortfolioCard
