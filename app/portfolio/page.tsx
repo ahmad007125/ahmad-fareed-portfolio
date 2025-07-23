@@ -1,8 +1,5 @@
-// 'use client';
-// import Image from "next/image";
-import NavigationMenuDemo from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import { PortfolioCard } from "./components/PortfolioCard";
+import NavigationMenuDemo from "../components/Header";
+import { PortfolioCard } from "../components/PortfolioCard";
 
 export default function Home() {
   const portfolioItems = [
@@ -32,8 +29,6 @@ export default function Home() {
   return (
     <div className="bg-background w-full min-h-screen font-[family-name:var(--font-geist-sans)]">
       <NavigationMenuDemo />
-      <HeroSection />
-
       <div className="portfolio-section container flex flex-col mx-auto sm:gap-20 gap-12 px-4 md:py-16 lg:py-20 py-12">
         <h2 className="title text-4xl font-bold text-foreground text-center">Portfolio</h2>
         {portfolioItems.map((item, index) => (
