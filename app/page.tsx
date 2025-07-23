@@ -1,8 +1,12 @@
-// 'use client';
-// import Image from "next/image";
+'use client'
+
+import { Button } from "@/components/ui/button";
 import NavigationMenuDemo from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import { PortfolioCard } from "./components/PortfolioCard";
+import Link from "next/link";
+import { services } from "./lib/services";
+import ServiceCard from "./components/ServiceCard";
 
 export default function Home() {
   const portfolioItems = [
@@ -19,13 +23,6 @@ export default function Home() {
       description: "A visually stunning, user-centric e-commerce user interface designed to deliver an effortless shopping experience across all devices. Built with responsiveness at its core, this UI adapts flawlessly to mobile, tablet, and desktop screens—ensuring high engagement and conversion rates.",
       button: "Full view",
       imageUrl: "/portfolio-2.png",
-    },
-    {
-      tag: "Business",
-      title: "Brand Landing Page",
-      description: "A strategically crafted landing page designed to captivate visitors, communicate brand value, and drive conversions. Every section is optimized to tell a compelling story, build trust, and encourage users to take action—whether that’s signing up, making a purchase, or exploring your offerings.",
-      button: "Full view",
-      imageUrl: "/portfolio-3.jpg",
     },
   ]
 
@@ -47,7 +44,33 @@ export default function Home() {
             imageUrl={item.imageUrl}
           />
         ))}
+        <Link href="/portfolio" className="w-full inline-block text-center">
+          <Button type="button" className="w-full cursor-pointer w-max">
+            View More...
+          </Button>
+        </Link>
       </div>
+      {/* Services section */}
+      <div className="services-section bg-body">
+        <div className="container flex flex-col mx-auto sm:gap-8 gap-6 px-4 md:py-16 lg:py-20 py-12">
+          <h2 className="title text-4xl font-bold text-foreground text-center">Services</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {services.slice(0, 3).map((service, index) => (
+              <ServiceCard
+                key={index}
+                title={service.title}
+                description={service.description}
+              />
+            ))}
+          </div>
+          <Link href="/services" className="w-full inline-block text-center">
+            <Button type="button" className="w-full cursor-pointer w-max">
+              View More...
+            </Button>
+          </Link>
+        </div>
+      </div>
+      
     </div>
   );
 }
