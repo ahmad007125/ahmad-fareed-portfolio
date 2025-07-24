@@ -36,6 +36,7 @@ export default function ServicesPage() {
                 key={service.id}
                 title={service.title}
                 description={service.description}
+                image={service.image}
               />
             ))}
           </div>
