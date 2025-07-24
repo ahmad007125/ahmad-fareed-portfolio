@@ -2,7 +2,6 @@
 
 import * as React from 'react'
 import { Menu } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import { Sheet, SheetTrigger } from '@/components/ui/sheet'
 import Link from 'next/link'
 import { SheetContent } from './MobileNavSheetContent'

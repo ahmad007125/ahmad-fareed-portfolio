@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import Image from "next/image"
 
 export default function ContactForm({
   className,
@@ -87,7 +88,7 @@ export default function ContactForm({
             </div>
           </form>
           <div className="bg-muted relative">
-            <img
+            <Image
               src="/ahmad-fareed.jpg"
               alt="Image"
               className="inset-0 h-full w-full object-cover dark:brightness-[0.8] dark:grayscale"
