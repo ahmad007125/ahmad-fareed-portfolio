@@ -19,15 +19,23 @@ const navLinks = [
 export default function NavigationMenuDemo() {
   return (
     <header className="w-full border-b bg-transparent bg-body">
-      <div className="container flex items-center justify-between gap-2 py-4 md:py-6 lg:py-8 mx-auto px-4 xl:gap-4">
+      <div className="container flex items-center justify-between gap-2 py-3 md:py-4 lg:py-7 mx-auto px-4 xl:gap-4">
 
         <Link href="/" className="text-xl font-bold text-primary">
           <Image
-            className="dark:invert"
-            src="/next.svg"
-            alt="Next.js logo"
-            width={150}
-            height={30}
+            className="md:w-[50px] w-[40px] block dark:hidden"
+            src="/af-logo.svg"
+            alt="AF logo"
+            width={50}
+            height={39}
+            priority
+          />
+          <Image
+            className="md:w-[50px] w-[40px] hidden dark:block"
+            src="/af-logo-dark.svg"
+            alt="AF logo"
+            width={50}
+            height={39}
             priority
           />
         </Link>
@@ -47,9 +55,7 @@ export default function NavigationMenuDemo() {
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost">
-                <Menu strokeWidth={1} size={32} />
-              </Button>
+                <Menu strokeWidth={1.5} size={32} className="color-foreground" />
             </SheetTrigger>
             <SheetContent side="left" className="w-[250px] bg-background">
               <div className="flex flex-col gap-4 mt-6">

@@ -15,7 +15,7 @@ export default function ContactForm({
           <form className="p-6 md:p-8">
             <div className="flex flex-col gap-6">
               <div className="flex flex-col items-center text-center">
-                <h1 className="text-2xl font-bold">Get in touch</h1>
+                <h1 className="text-2xl font-bold">Ahmad Fareed</h1>
                 <p className="text-muted-foreground text-balance">
                   Frontend Developer | UI/UX Designer & Developer
                 </p>
@@ -88,17 +88,13 @@ export default function ContactForm({
           </form>
           <div className="bg-muted relative">
             <img
-              src="/placeholder.svg"
+              src="/ahmad-fareed.jpg"
               alt="Image"
-              className="inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+              className="inset-0 h-full w-full object-cover dark:brightness-[0.8] dark:grayscale"
             />
           </div>
         </CardContent>
       </Card>
-      <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
-        By clicking continue, you agree to our <a href="#">Terms of Service</a>{" "}
-        and <a href="#">Privacy Policy</a>.
-      </div>
     </div>
   )
 }
