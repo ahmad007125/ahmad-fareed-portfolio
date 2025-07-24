@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 type ServiceProps = {
   title: string;
   description: string;
-  image: string;
+  image?: string;
 };
 
 export default function ServiceCard({ title, description, image }: ServiceProps) {
