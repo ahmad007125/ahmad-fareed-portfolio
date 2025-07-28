@@ -19,7 +19,7 @@ export default function ServicesPage() {
     // Simulating API fetch
     setTimeout(() => {
       setServices(serviceList);
-    }, 1000);
+    }, 500);
   }, []);
 
   return (
