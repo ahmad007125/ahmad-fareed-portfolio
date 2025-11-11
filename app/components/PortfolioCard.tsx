@@ -1,55 +1,69 @@
-// 'use client'
-
 import Image from "next/image"
+import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import type { PortfolioProject } from "@/app/lib/portfolio"
 
-export function PortfolioCard({
-  tag,
-  title,
-  description,
-  button,
-  imageUrl,
-  index,
-}: {
-  tag: string
-  title: string
-  description: string
-  button: string
-  imageUrl: string
+type PortfolioCardProps = {
+  project: PortfolioProject
   index: number
-}) {
+}
+
+export function PortfolioCard({ project, index }: PortfolioCardProps) {
   return (
-    <div
-        className={`flex flex-col-reverse items-center justify-between gap-8 ${
-        index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
-        }`}
+    <article
+      className={cn(
+        "group flex flex-col items-stretch gap-8 rounded-3xl border border-border/60 bg-background/80 p-6 shadow-sm transition hover:border-primary/40 hover:shadow-lg md:flex-row md:p-8",
+        index % 2 !== 0 && "md:flex-row-reverse"
+      )}
     >
-      <div className="card-info sm:max-w-1/2 max-w-full flex-1 w-full">
-        <div className="flex flex-col gap-2">
-          <span data-slot="badge" className="w-max inline-flex items-center justify-center gap-1 rounded-full border border-transparent bg-secondary px-2 py-0.5 text-xs font-medium text-secondary-foreground shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2">{tag}</span>
-          <h3 className="text-xl font-semibold">{title}</h3>
-          <p className="font-normal text-muted-foreground">{description}</p>
-          <Button className="w-max h-8 items-center justify-center">
-            <Link href="#">{button}</Link>
+      <div className="flex w-full max-w-xl flex-1 flex-col justify-between gap-6">
+        <div className="space-y-4">
+          <div className="flex items-center gap-3">
+            <span className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-primary">
+              {project.industry}
+            </span>
+            <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+              {project.year}
+            </span>
+          </div>
+            <h3 className="text-2xl font-semibold text-foreground md:text-3xl">{project.title}</h3>
+          <p className="text-sm text-muted-foreground md:text-base">{project.summary}</p>
+        </div>
+
+        <div className="space-y-4">
+          <div className="flex flex-wrap gap-2">
+            {project.services.slice(0, 3).map((service) => (
+              <span
+                key={service}
+                className="inline-flex items-center rounded-full border border-border px-3 py-1 text-xs font-medium text-muted-foreground transition group-hover:border-primary/30 group-hover:text-primary"
+              >
+                {service}
+              </span>
+            ))}
+            {project.services.length > 3 && (
+              <span className="inline-flex items-center rounded-full border border-border px-3 py-1 text-xs font-medium text-muted-foreground">
+                +{project.services.length - 3} more
+              </span>
+            )}
+          </div>
+          <Button asChild className="w-max">
+            <Link href={`/portfolio/${project.slug}`}>View case study</Link>
           </Button>
         </div>
       </div>
-      <Card className="overflow-hidden group w-full sm:max-w-1/2 max-w-full flex-1 border border-xl !rounded-0 p-0 shadow-lg">
-        <div className="relative h-64 overflow-hidden">
+      <Card className="relative flex w-full flex-1 overflow-hidden rounded-2xl border border-border/70 bg-background/40">
+        <div className="relative h-[280px] w-full overflow-hidden md:h-full">
           <Image
-            src={imageUrl}
-            alt={title}
+            src={project.thumbnail}
+            alt={project.title}
             fill
-            className={cn(
-              "w-full !h-auto transition-transform duration-[6000ms] linear group-hover:-translate-y-[calc(100%-16rem)]"
-            )}
+            className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
+            sizes="(min-width: 1024px) 540px, 100vw"
           />
         </div>
       </Card>
-    </div>
+    </article>
   )
 }
-

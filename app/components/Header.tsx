@@ -10,15 +10,16 @@ import Image from 'next/image'
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/services', label: 'Services' },
+  { href: '/skills', label: 'Skills' },
   { href: '/portfolio', label: 'Portfolio' },
   { href: '/contact', label: 'Contact' },
 ]
 
 export default function NavigationMenuDemo() {
   return (
-    <header className="w-full border-b bg-transparent bg-body">
-      <div className="container flex items-center justify-between gap-2 py-3 md:py-4 lg:py-7 mx-auto px-4 xl:gap-4">
+    <header className="w-full bg-transparent bg-body sticky top-4 z-9">
+      <div className="container px-4 mx-auto">
+      <div className="mt-4 bg-body/80 backdrop-blur-md rounded-xl flex items-center justify-between gap-2 py-2 md:py-3 lg:py-5 mx-auto px-8 xl:gap-4 transition-all duration-300">
 
         <Link href="/" className="text-xl font-bold text-primary">
           <Image
@@ -70,6 +71,8 @@ export default function NavigationMenuDemo() {
               </div>
             </SheetContent>
           </Sheet>
+        </div>
+
         </div>
       </div>
     </header>

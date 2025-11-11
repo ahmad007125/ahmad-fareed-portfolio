@@ -1,48 +1,48 @@
-import NavigationMenuDemo from "../components/Header";
-import { PortfolioCard } from "../components/PortfolioCard";
+import NavigationMenuDemo from "../components/Header"
+import { PortfolioCard } from "../components/PortfolioCard"
+import { portfolioProjects } from "../lib/portfolio"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
-export default function Home() {
-  const portfolioItems = [
-    {
-      tag: "Real Estate",
-      title: "Modern Web App",
-      description: "A sleek and scalable application for modern businesses refers to a software solution that combines clean, user-friendly design (sleek) with robust architecture that supports growth and high performance (scalable), tailored to meet the evolving needs of contemporary, fast-paced companies.",
-      button: "Full view",
-      imageUrl: "/landsy-homepage.jpg",
-    },
-    {
-      tag: "E Commerce",
-      title: "E-commerce Design",
-      description: "A visually stunning, user-centric e-commerce user interface designed to deliver an effortless shopping experience across all devices. Built with responsiveness at its core, this UI adapts flawlessly to mobile, tablet, and desktop screens—ensuring high engagement and conversion rates.",
-      button: "Full view",
-      imageUrl: "/portfolio-2.png",
-    },
-    {
-      tag: "Business",
-      title: "Brand Landing Page",
-      description: "A strategically crafted landing page designed to captivate visitors, communicate brand value, and drive conversions. Every section is optimized to tell a compelling story, build trust, and encourage users to take action—whether that’s signing up, making a purchase, or exploring your offerings.",
-      button: "Full view",
-      imageUrl: "/portfolio-3.jpg",
-    },
-  ]
-
+export default function PortfolioPage() {
   return (
     <div className="bg-background w-full min-h-screen font-[family-name:var(--font-geist-sans)]">
       <NavigationMenuDemo />
-      <div className="portfolio-section container flex flex-col mx-auto sm:gap-20 gap-12 px-4 md:py-16 lg:py-20 py-12">
-        <h2 className="title text-4xl font-bold text-foreground text-center">Portfolio</h2>
-        {portfolioItems.map((item, index) => (
-          <PortfolioCard
-            key={index}
-            index={index}
-            tag={item.tag}
-            title={item.title}
-            description={item.description}
-            button={item.button}
-            imageUrl={item.imageUrl}
-          />
-        ))}
-      </div>
+      <main className="container mx-auto flex flex-col gap-16 px-4 py-16 md:gap-20 md:py-20 lg:py-24">
+        <section className="flex flex-col gap-4 text-center">
+          <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary/80">Portfolio</p>
+          <h1 className="text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">
+            A selection of product work across SaaS, ecommerce, and growth.
+          </h1>
+          <p className="mx-auto max-w-2xl text-sm text-muted-foreground md:text-base">
+            Each project pairs strategic insight with hands-on execution—from research and product definition
+            to interface design and production-ready frontend builds.
+          </p>
+        </section>
+
+        <section className="flex flex-col gap-10 md:gap-12">
+          {portfolioProjects.map((project, index) => (
+            <PortfolioCard key={project.slug} project={project} index={index} />
+          ))}
+        </section>
+
+        <section className="rounded-3xl border border-border/60 bg-body/60 p-8 text-center md:p-12">
+          <h2 className="text-2xl font-semibold text-foreground md:text-3xl">
+            Looking for a case study tailored to your industry?
+          </h2>
+          <p className="mt-4 text-sm text-muted-foreground md:text-base">
+            I&apos;d love to share more detail about relevant work, walk through design files, or spin up a short discovery sprint together.
+          </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <Button asChild className="rounded-full px-6">
+              <Link href="/contact">Start a project conversation</Link>
+            </Button>
+            <Button asChild variant="outline" className="rounded-full px-6">
+              <Link href="/skills">See how I can help</Link>
+            </Button>
+          </div>
+        </section>
+      </main>
     </div>
-  );
+  )
 }
