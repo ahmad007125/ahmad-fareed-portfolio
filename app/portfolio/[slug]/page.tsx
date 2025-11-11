@@ -6,15 +6,15 @@ import { Button } from "@/components/ui/button"
 import { portfolioProjects } from "../../lib/portfolio"
 
 type PortfolioPageProps = {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return portfolioProjects.map((project) => ({ slug: project.slug }))
 }
 
-export function generateMetadata({ params }: PortfolioPageProps) {
-  const { slug } = params
+export async function generateMetadata({ params }: PortfolioPageProps) {
+  const { slug } = await params
   const project = portfolioProjects.find((item) => item.slug === slug)
 
   if (!project) {
@@ -35,8 +35,8 @@ export function generateMetadata({ params }: PortfolioPageProps) {
   }
 }
 
-export default function PortfolioDetailPage({ params }: PortfolioPageProps) {
-  const { slug } = params
+export default async function PortfolioDetailPage({ params }: PortfolioPageProps) {
+  const { slug } = await params
   const project = portfolioProjects.find((item) => item.slug === slug)
 
   if (!project) {
