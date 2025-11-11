@@ -1,109 +1,148 @@
 'use client'
 
-import { Button } from "@/components/ui/button";
-import NavigationMenuDemo from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import { PortfolioCard } from "./components/PortfolioCard";
-import Link from "next/link";
-import { services } from "./lib/services";
-import ServiceCard from "./components/ServiceCard";
-import Image from "next/image";
+import { Button } from "@/components/ui/button"
+import NavigationMenuDemo from "./components/Header"
+import HeroSection from "./components/HeroSection"
+import { PortfolioCard } from "./components/PortfolioCard"
+import Link from "next/link"
+import { skills } from "./lib/skills"
+import SkillCard from "./components/SkillCard"
+import Image from "next/image"
+import { portfolioProjects } from "./lib/portfolio"
+
+const process = [
+  {
+    title: "Discover & Define",
+    description:
+      "We start with collaborative workshops and user research to frame the problem, surface opportunities, and align on success metrics.",
+  },
+  {
+    title: "Design & Prototype",
+    description:
+      "Translate insights into wireframes, design systems, and interactive prototypes that we can validate with real users quickly.",
+  },
+  {
+    title: "Build & Iterate",
+    description:
+      "Ship production-ready experiences with modern frontend tooling, measure impact, and iterate based on live product data.",
+  },
+]
 
 export default function Home() {
-  const portfolioItems = [
-    {
-      tag: "Real Estate",
-      title: "Modern Web App",
-      description: "A sleek and scalable application for modern businesses refers to a software solution that combines clean, user-friendly design (sleek) with robust architecture that supports growth and high performance (scalable), tailored to meet the evolving needs of contemporary, fast-paced companies.",
-      button: "Full view",
-      imageUrl: "/landsy-homepage.jpg",
-    },
-    {
-      tag: "E Commerce",
-      title: "E-commerce Design",
-      description: "A visually stunning, user-centric e-commerce user interface designed to deliver an effortless shopping experience across all devices. Built with responsiveness at its core, this UI adapts flawlessly to mobile, tablet, and desktop screens—ensuring high engagement and conversion rates.",
-      button: "Full view",
-      imageUrl: "/portfolio-2.png",
-    },
-  ]
+  const featuredProjects = portfolioProjects.filter((project) => project.featured).slice(0, 2)
 
   return (
     <div className="bg-background w-full min-h-screen font-[family-name:var(--font-geist-sans)]">
       <NavigationMenuDemo />
       <HeroSection />
 
-      <div className="portfolio-section container flex flex-col mx-auto sm:gap-20 gap-12 px-4 md:py-16 lg:py-20 py-12">
-        <h2 className="title text-4xl font-bold text-foreground text-center">Portfolio</h2>
-        {portfolioItems.map((item, index) => (
-          <PortfolioCard
-            key={index}
-            index={index}
-            tag={item.tag}
-            title={item.title}
-            description={item.description}
-            button={item.button}
-            imageUrl={item.imageUrl}
-          />
-        ))}
-        <Link href="/portfolio" className="w-full inline-block text-center">
-          <Button type="button" className="w-full cursor-pointer w-max">
-            View More...
-          </Button>
-        </Link>
-      </div>
-      {/* Services section */}
-      <div className="services-section bg-body">
-        <div className="container flex flex-col mx-auto sm:gap-12 gap-10 px-4 md:py-16 lg:py-20 py-12">
-          <div className="services-heading">
-            <h2 className="title text-4xl font-bold text-foreground text-center mb-1">Services</h2>
-            <p className="text-sm text-muted-foreground text-center">Crafting Digital Experiences with Design, Creativity & Code.</p>
+      <section className="container mx-auto flex flex-col gap-12 px-4 py-16 md:gap-16 md:py-20 lg:py-24">
+        <div className="flex flex-col items-start gap-4 text-left md:flex-row md:items-end md:justify-between">
+          <div>
+            <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary/80">
+              Selected Work
+            </p>
+            <h2 className="mt-2 text-3xl font-semibold text-foreground md:text-4xl">
+              Product experiences that balance craft and performance
+            </h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.slice(0, 3).map((service, index) => (
-              <ServiceCard
-                key={index}
-                title={service.title}
-                description={service.description}
-                image={service.image}
+          <Link
+            href="/portfolio"
+            className="inline-flex items-center rounded-full border border-border/70 px-5 py-2 text-sm font-medium text-muted-foreground transition hover:border-primary/40 hover:text-primary"
+          >
+            Browse all projects
+          </Link>
+        </div>
+        <div className="flex flex-col gap-8 md:gap-12">
+          {featuredProjects.map((project, index) => (
+            <PortfolioCard key={project.slug} project={project} index={index} />
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-body/60">
+        <div className="container mx-auto flex flex-col gap-12 px-4 py-16 md:gap-16 md:py-20 lg:py-24">
+          <div className="flex flex-col items-center text-center">
+            <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary/80">
+              Capabilities
+            </p>
+            <h2 className="mt-2 max-w-2xl text-3xl font-semibold text-foreground md:text-4xl">
+              From UX strategy to production-ready interfaces, I ship the full stack of product design
+            </h2>
+            <p className="mt-3 max-w-2xl text-sm text-muted-foreground md:text-base">
+              Here’s a snapshot of how I help teams move quickly, stay aligned, and launch experiences their users love.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {skills.slice(0, 6).map((skill) => (
+              <SkillCard
+                key={skill.id}
+                title={skill.title}
+                description={skill.description}
+                image={skill.image}
+                focusAreas={skill.focusAreas}
               />
             ))}
           </div>
-          <Link href="/services" className="w-full inline-block text-center">
-            <Button type="button" className="w-full cursor-pointer w-max">
-              View More...
-            </Button>
-          </Link>
-        </div>
-      </div>
-      {/* About section */}
-      <div className="about-section bg-background">
-        <div className="container max-w-xl mx-auto text-center md:py-16 lg:py-20 py-12 px-4">
-          <div className="flex flex-col items-center gap-4">
-            <Image
-              src="/ahmad-fareed.jpg"
-              alt="Profile"
-              width={150}
-              height={150}
-              className="rounded-full object-cover shadow-md w-[150px] h-[150px]"
-            />
-            <div className="about-text">
-              <h2 className="title text-4xl font-bold text-foreground text-center mb-1">Ahmad Fareed</h2>
-              <p className="text-sm mt-0 text-foreground">
-                UI/UX Designer & Frontend Developer
-              </p>
-            </div>
-            <p className="text-muted-foreground text-sm max-w-md">
-              I craft user-friendly interfaces and bring designs to life with clean, responsive code. With years of experience in design and development, I help brands build beautiful, functional web experiences.
-            </p>
-            <Link href="/about" className="w-full inline-block text-center">
-              <Button type="button" className="w-full cursor-pointer w-max mt-1">
-                More info...
+          <div className="flex justify-center">
+            <Link href="/skills">
+              <Button variant="outline" className="rounded-full px-6">
+                Explore the full skillset
               </Button>
             </Link>
           </div>
         </div>
-      </div>
-      
+      </section>
+
+      <section className="container mx-auto flex flex-col gap-12 px-4 py-16 md:gap-16 md:py-20 lg:py-24">
+        <div className="flex flex-col items-center text-center">
+          <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary/80">
+            Process
+          </p>
+          <h2 className="mt-2 text-3xl font-semibold text-foreground md:text-4xl">
+            A collaborative, insight-driven approach
+          </h2>
+          <p className="mt-3 max-w-2xl text-sm text-muted-foreground md:text-base">
+            Every engagement is tailored, but the pillars stay consistent—understand the problem, design the right solution, and ship with care.
+          </p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-3">
+          {process.map((step) => (
+            <div
+              key={step.title}
+              className="flex flex-col gap-3 rounded-2xl border border-border/70 bg-background/80 p-6 text-left shadow-sm"
+            >
+              <h3 className="text-lg font-semibold text-foreground">{step.title}</h3>
+              <p className="text-sm text-muted-foreground">{step.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10">
+        <div className="container mx-auto flex flex-col items-center gap-10 px-4 py-16 text-center md:flex-row md:items-center md:justify-between md:text-left lg:py-20">
+          <div className="flex flex-col gap-4 max-w-2xl">
+            <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary">
+              About Ahmad
+            </p>
+            <h2 className="text-3xl font-semibold text-foreground md:text-4xl">
+              Hybrid designer-engineer with a love for human-centred products
+            </h2>
+            <p className="text-sm text-muted-foreground md:text-base">
+              I partner with founders and product teams to translate customer insight into design clarity—and then into fast, reliable code. Over the last five years I&apos;ve led redesigns, design system rollouts, and growth experiments for startups and scale-ups.
+            </p>
+          </div>
+          <div className="relative">
+            <Image
+              src="/ahmad-fareed.jpg"
+              alt="Ahmad Fareed"
+              width={220}
+              height={220}
+              className="rounded-3xl border border-primary/30 object-cover shadow-xl"
+            />
+          </div>
+        </div>
+      </section>
     </div>
-  );
+  )
 }
