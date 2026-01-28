@@ -12,7 +12,7 @@ const highlights = [
 export default function HeroSection() {
   return (
     <section className="w-full bg-gradient-to-b from-background via-background/95 to-body">
-      <div className="container mx-auto flex flex-col items-center gap-10 lg:px-12 sm:px-8 px-4 py-16 px-12 md:flex-row md:gap-16 md:py-20 lg:py-24">
+      <div className="container mx-auto flex flex-col items-center gap-10 lg:px-12 md:px-8 px-4 py-16 md:flex-row md:gap-16 md:py-20 lg:py-24">
         <div className="flex w-full flex-1 flex-col gap-6">
           <span className="max-w-max rounded-full border border-primary/20 bg-primary/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.1em] text-primary">
             Product Designer & Frontend Developer

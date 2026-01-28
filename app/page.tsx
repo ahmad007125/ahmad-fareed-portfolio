@@ -48,7 +48,7 @@ export default function Home() {
           </div>
           <Link
             href="/portfolio"
-            className="inline-flex items-center rounded-full border border-border/70 px-5 py-2 text-sm font-medium text-muted-foreground transition hover:border-primary/40 hover:text-primary"
+            className="inline-flex items-center rounded-full border border-border/70 px-5 py-2 text-sm font-medium text-muted-foreground transition hover:border-primary/40 hover:text-primary whitespace-nowrap"
           >
             Browse all projects
           </Link>

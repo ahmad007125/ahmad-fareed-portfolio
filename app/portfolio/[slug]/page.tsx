@@ -48,7 +48,7 @@ export default async function PortfolioDetailPage({ params }: PortfolioPageProps
       <NavigationMenuDemo />
       <main className="container mx-auto flex flex-col gap-16 lg:px-12 sm:px-8 px-4 py-16 md:gap-20 md:py-20 lg:py-24">
         <section className="grid gap-10 md:grid-cols-[1.2fr_0.8fr]">
-          <div className="space-y-6 sm:sticky relative top-[150px] h-max">
+          <div className="space-y-6 md:sticky static top-[150px] h-max">
             <Link
               href="/portfolio"
               className="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.1em] text-muted-foreground transition hover:text-primary"
