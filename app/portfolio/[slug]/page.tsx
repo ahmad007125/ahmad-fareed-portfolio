@@ -46,12 +46,12 @@ export default async function PortfolioDetailPage({ params }: PortfolioPageProps
   return (
     <div className="bg-background w-full min-h-screen font-[family-name:var(--font-geist-sans)]">
       <NavigationMenuDemo />
-      <main className="container mx-auto flex flex-col gap-16 px-4 py-16 md:gap-20 md:py-20 lg:py-24">
-        <section className="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-center">
-          <div className="space-y-6">
+      <main className="container mx-auto flex flex-col gap-16 lg:px-12 sm:px-8 px-4 py-16 md:gap-20 md:py-20 lg:py-24">
+        <section className="grid gap-10 md:grid-cols-[1.2fr_0.8fr]">
+          <div className="space-y-6 sm:sticky relative top-[150px] h-max">
             <Link
               href="/portfolio"
-              className="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.3em] text-muted-foreground transition hover:text-primary"
+              className="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.1em] text-muted-foreground transition hover:text-primary"
             >
               ← Back to portfolio
             </Link>

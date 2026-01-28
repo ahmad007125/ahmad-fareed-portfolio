@@ -107,10 +107,10 @@ export default function ContactForm({ className, ...props }: React.ComponentProp
           <div className="relative flex flex-col justify-between gap-10 bg-body/60 p-6 md:p-8">
             <div className="space-y-6">
               <div className="space-y-3">
-                <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary/80">Availability</p>
+                <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary/80">Availability</p>
                 <h2 className="text-2xl font-semibold text-foreground">Currently welcoming new collaborations</h2>
                 <p className="text-sm text-muted-foreground">
-                  Based in Lahore, collaborating remotely with teams across timezones in MENA, Europe, and North America.
+                  Based in Al Thuqbah, Eastern Saudi Arabia, collaborating remotely with teams across timezones in MENA, Europe, and North America.
                 </p>
               </div>
               <div className="rounded-2xl border border-border/70 bg-background/80 p-4 shadow-sm">

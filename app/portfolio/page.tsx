@@ -8,9 +8,9 @@ export default function PortfolioPage() {
   return (
     <div className="bg-background w-full min-h-screen font-[family-name:var(--font-geist-sans)]">
       <NavigationMenuDemo />
-      <main className="container mx-auto flex flex-col gap-16 px-4 py-16 md:gap-20 md:py-20 lg:py-24">
+      <main className="container mx-auto flex flex-col gap-16 lg:px-12 sm:px-8 px-4 py-16 md:gap-20 md:py-20 lg:py-24">
         <section className="flex flex-col gap-4 text-center">
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary/80">Portfolio</p>
+          <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary/80">Portfolio</p>
           <h1 className="text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">
             A selection of product work across SaaS, ecommerce, and growth.
           </h1>

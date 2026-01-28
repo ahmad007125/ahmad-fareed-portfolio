@@ -17,9 +17,9 @@ export default function SkillsPage() {
   return (
     <div className="bg-background w-full min-h-screen font-[family-name:var(--font-geist-sans)]">
       <NavigationMenuDemo />
-      <main className="container mx-auto flex flex-col gap-16 px-4 py-16 md:gap-20 md:py-20 lg:py-24">
+      <main className="container mx-auto flex flex-col gap-16 lg:px-12 sm:px-8 px-4 py-16 md:gap-20 md:py-20 lg:py-24">
         <section className="space-y-6 text-center md:space-y-8">
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary/80">
+          <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary/80">
             Capabilities
           </p>
           <h1 className="text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">
@@ -29,7 +29,7 @@ export default function SkillsPage() {
             From discovery to deployment, I combine strategic thinking, design craft, and production-ready code
             to help teams move faster and deliver measurable outcomes.
           </p>
-          <div className="flex flex-wrap justify-center gap-3 pt-2 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">
+          <div className="flex flex-wrap justify-center gap-3 pt-2 text-xs font-medium uppercase tracking-[0.1em] text-muted-foreground">
             {partners.map((partner) => (
               <span
                 key={partner}
