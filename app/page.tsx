@@ -36,10 +36,10 @@ export default function Home() {
       <NavigationMenuDemo />
       <HeroSection />
 
-      <section className="container mx-auto flex flex-col gap-12 px-4 py-16 md:gap-16 md:py-20 lg:py-24">
+      <section className="container mx-auto flex flex-col gap-12 lg:px-12 sm:px-8 px-4 py-16 md:gap-16 md:py-20 lg:py-24">
         <div className="flex flex-col items-start gap-4 text-left md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary/80">
+            <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary/80">
               Selected Work
             </p>
             <h2 className="mt-2 text-3xl font-semibold text-foreground md:text-4xl">
@@ -61,9 +61,9 @@ export default function Home() {
       </section>
 
       <section className="bg-body/60">
-        <div className="container mx-auto flex flex-col gap-12 px-4 py-16 md:gap-16 md:py-20 lg:py-24">
+        <div className="container mx-auto flex flex-col gap-12 lg:px-12 sm:px-8 px-4 py-16 md:gap-16 md:py-20 lg:py-24">
           <div className="flex flex-col items-center text-center">
-            <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary/80">
+            <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary/80">
               Capabilities
             </p>
             <h2 className="mt-2 max-w-2xl text-3xl font-semibold text-foreground md:text-4xl">
@@ -94,9 +94,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto flex flex-col gap-12 px-4 py-16 md:gap-16 md:py-20 lg:py-24">
+      <section className="container mx-auto flex flex-col gap-12 lg:px-12 sm:px-8 px-4 py-16 md:gap-16 md:py-20 lg:py-24">
         <div className="flex flex-col items-center text-center">
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary/80">
+          <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary/80">
             Process
           </p>
           <h2 className="mt-2 text-3xl font-semibold text-foreground md:text-4xl">
@@ -120,9 +120,9 @@ export default function Home() {
       </section>
 
       <section className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10">
-        <div className="container mx-auto flex flex-col items-center gap-10 px-4 py-16 text-center md:flex-row md:items-center md:justify-between md:text-left lg:py-20">
+        <div className="container mx-auto flex flex-col items-center gap-10 lg:px-12 sm:px-8 px-4 py-16 text-center md:flex-row md:items-center md:justify-between md:text-left lg:py-20">
           <div className="flex flex-col gap-4 max-w-2xl">
-            <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary">
+            <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary">
               About Ahmad
             </p>
             <h2 className="text-3xl font-semibold text-foreground md:text-4xl">

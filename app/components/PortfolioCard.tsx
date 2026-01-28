@@ -21,7 +21,7 @@ export function PortfolioCard({ project, index }: PortfolioCardProps) {
       <div className="flex w-full max-w-xl flex-1 flex-col justify-between gap-6">
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <span className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-primary">
+            <span className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.1em] text-primary">
               {project.industry}
             </span>
             <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
@@ -53,7 +53,7 @@ export function PortfolioCard({ project, index }: PortfolioCardProps) {
           </Button>
         </div>
       </div>
-      <Card className="relative flex w-full flex-1 overflow-hidden rounded-2xl border border-border/70 bg-background/40">
+      <Card className="relative flex w-full flex-1 overflow-hidden rounded-2xl border border-border/70 bg-background/40 !py-0">
         <div className="relative h-[280px] w-full overflow-hidden md:h-full">
           <Image
             src={project.thumbnail}

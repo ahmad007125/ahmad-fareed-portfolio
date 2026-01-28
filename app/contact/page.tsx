@@ -24,10 +24,10 @@ export default function ContactPage() {
   return (
     <div className="bg-background w-full min-h-screen font-[family-name:var(--font-geist-sans)]">
       <NavigationMenuDemo />
-      <main className="container mx-auto flex flex-col gap-16 px-4 py-16 md:gap-20 md:py-20 lg:py-24">
+      <main className="container mx-auto flex flex-col gap-16 lg:px-12 sm:px-8 px-4 py-16 md:gap-20 md:py-20 lg:py-24">
         <section className="grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-center">
           <div className="space-y-6">
-            <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary/80">Let&apos;s collaborate</p>
+            <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary/80">Let&apos;s collaborate</p>
             <h1 className="text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">
               Ready to design and ship something your customers will love?
             </h1>
@@ -47,7 +47,7 @@ export default function ContactPage() {
               </div>
               <div className="rounded-2xl border border-border/70 bg-background/80 p-4">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Location</p>
-                <p className="mt-1 text-base font-semibold text-foreground">Lahore · Remote worldwide</p>
+                <p className="mt-1 text-base font-semibold text-foreground">Al Thuqbah, Eastern Saudi Arabia · Remote worldwide</p>
               </div>
             </div>
             <Button asChild variant="outline" className="rounded-full px-6">

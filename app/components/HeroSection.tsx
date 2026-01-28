@@ -12,9 +12,9 @@ const highlights = [
 export default function HeroSection() {
   return (
     <section className="w-full bg-gradient-to-b from-background via-background/95 to-body">
-      <div className="container mx-auto flex flex-col items-center gap-10 px-4 py-16 md:flex-row md:gap-16 md:py-20 lg:py-24">
+      <div className="container mx-auto flex flex-col items-center gap-10 lg:px-12 sm:px-8 px-4 py-16 px-12 md:flex-row md:gap-16 md:py-20 lg:py-24">
         <div className="flex w-full flex-1 flex-col gap-6">
-          <span className="w-max rounded-full border border-primary/20 bg-primary/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.2em] text-primary">
+          <span className="max-w-max rounded-full border border-primary/20 bg-primary/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.1em] text-primary">
             Product Designer & Frontend Developer
           </span>
           <h1 className="max-w-2xl text-4xl font-semibold leading-tight text-foreground md:text-5xl lg:text-[3.25rem] lg:leading-[1.1]">
@@ -48,8 +48,8 @@ export default function HeroSection() {
             ))}
           </dl>
         </div>
-        <div className="relative flex w-full flex-1 justify-center">
-          <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl border border-primary/10 bg-gradient-to-br from-body via-background to-background shadow-2xl">
+        <div className="relative flex w-full flex-1 sm:justify-end justify-center">
+          <div className="relative aspect-[4/5] w-full sm:max-w-[70%] max-w-full overflow-hidden rounded-3xl border border-primary/10 bg-gradient-to-br from-body via-background to-background shadow-2xl">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(99,102,241,0.12),transparent_55%)]" />
             <Image
               src="/ahmad-fareed.jpg"
