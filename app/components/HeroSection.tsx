@@ -4,9 +4,9 @@ import Image from "next/image"
 import Link from "next/link"
 
 const highlights = [
-  { label: "Projects delivered", value: "35+" },
+  { label: "Projects Completed", value: "15+" },
   { label: "Conversion lift", value: "28%" },
-  { label: "Years experience", value: "5+" },
+  { label: "Years experience", value: "4+" },
 ]
 
 export default function HeroSection() {
@@ -62,7 +62,7 @@ export default function HeroSection() {
             <div className="absolute bottom-4 left-4 right-4 z-20 rounded-xl bg-background/80 p-4 backdrop-blur">
               <p className="text-xs uppercase tracking-wide text-muted-foreground">Toolbox</p>
               <p className="text-sm font-medium text-foreground">
-                Figma · Framer · Next.js · Tailwind · TypeScript
+                Figma · Photoshop · React/Next.js UI · Tailwind 
               </p>
             </div>
           </div>
