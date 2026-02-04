@@ -6,14 +6,14 @@ import { Label } from "@/components/ui/label"
 import Image from "next/image"
 
 const FORM_ENDPOINT =
-  process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "https://formsubmit.co/hello@ahmadfareed.design"
+  process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "https://formsubmit.co/ahmadfareedui360@gmail.com"
 
 export default function ContactForm({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card className="overflow-hidden border border-border/70 bg-background/95">
-        <CardContent className="grid gap-0 p-0 md:grid-cols-[1.1fr_0.9fr]">
-          <form
+        <CardContent className="grid gap-0 p-0">
+          {/* <form
             action={FORM_ENDPOINT}
             method="POST"
             className="flex flex-col gap-6 p-6 md:p-8"
@@ -25,8 +25,8 @@ export default function ContactForm({ className, ...props }: React.ComponentProp
               <h1 className="text-2xl font-semibold text-foreground md:text-3xl">Tell me about your project</h1>
               <p className="text-sm text-muted-foreground">
                 Share a few details and I&apos;ll follow up within two business days. Prefer email? Reach me at{" "}
-                <a href="mailto:hello@ahmadfareed.design" className="text-primary underline underline-offset-4">
-                  hello@ahmadfareed.design
+                <a href="mailto:ahmadfareedui360@gmail.com" className="text-primary underline underline-offset-4">
+                  ahmadfareedui360@gmail.com
                 </a>
                 .
               </p>
@@ -102,10 +102,10 @@ export default function ContactForm({ className, ...props }: React.ComponentProp
             <Button type="submit" className="mt-2 w-full rounded-full md:w-max md:px-8">
               Send message
             </Button>
-          </form>
+          </form> */}
 
           <div className="relative flex flex-col justify-between gap-10 bg-body/60 p-6 md:p-8">
-            <div className="space-y-6">
+            <div className="space-y-6 flex lg:flex-row flex-col items-center justify-between gap-4">
               <div className="space-y-3">
                 <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary/80">Availability</p>
                 <h2 className="text-2xl font-semibold text-foreground">Currently welcoming new collaborations</h2>
@@ -123,36 +123,7 @@ export default function ContactForm({ className, ...props }: React.ComponentProp
                 </ul>
               </div>
             </div>
-            <div className="flex flex-col gap-3">
-              <div className="flex items-center gap-3">
-                <Image
-                  src="/ahmad-fareed.jpg"
-                  alt="Ahmad Fareed"
-                  width={48}
-                  height={48}
-                  className="h-12 w-12 rounded-full object-cover"
-                />
-                <div>
-                  <p className="text-sm font-semibold text-foreground">Ahmad Fareed</p>
-                  <p className="text-xs text-muted-foreground">Product Designer & Frontend Developer</p>
-                </div>
-              </div>
-              <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
-                <a href="mailto:hello@ahmadfareed.design" className="underline underline-offset-4 hover:text-primary">
-                  hello@ahmadfareed.design
-                </a>
-                <span>·</span>
-                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">
-                  LinkedIn
-                </a>
-                <a href="https://dribbble.com" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">
-                  Dribbble
-                </a>
-                <a href="https://behance.net" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">
-                  Behance
-                </a>
-              </div>
-            </div>
+            
           </div>
         </CardContent>
       </Card>

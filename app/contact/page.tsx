@@ -39,10 +39,10 @@ export default function ContactPage() {
               <div className="rounded-2xl border border-border/70 bg-background/80 p-4">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Email</p>
                 <a
-                  href="mailto:hello@ahmadfareed.design"
+                  href="mailto:ahmadfareedui360@gmail.com"
                   className="mt-1 block text-base font-semibold text-foreground underline-offset-4 hover:text-primary hover:underline"
                 >
-                  hello@ahmadfareed.design
+                  ahmadfareedui360@gmail.com
                 </a>
               </div>
               <div className="rounded-2xl border border-border/70 bg-background/80 p-4">
@@ -50,9 +50,9 @@ export default function ContactPage() {
                 <p className="mt-1 text-base font-semibold text-foreground">Al Thuqbah, Eastern Saudi Arabia · Remote worldwide</p>
               </div>
             </div>
-            <Button asChild variant="outline" className="rounded-full px-6">
+            <Button asChild className="rounded-full px-6">
               <a href="https://cal.com" target="_blank" rel="noreferrer">
-                Book a 30-min intro call
+                Book a 15-min intro call
               </a>
             </Button>
           </div>

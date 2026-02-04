@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -33,21 +34,21 @@ export default function Footer() {
             </p>
             <div className="flex flex-wrap gap-3">
               <Button asChild className="rounded-full px-6">
-                <Link href="/contact">Start a project</Link>
+                <Link href="mailto:ahmadfareedui360@gmail.com">Start a project</Link>
               </Button>
               <Button asChild variant="outline" className="rounded-full px-6">
                 <Link href="/portfolio">View latest work</Link>
               </Button>
             </div>
           </div>
-          <div className="grid gap-6 rounded-3xl border border-border/60 bg-background/80 p-6 shadow-sm">
+          {/* <div className="grid gap-6 rounded-3xl border border-border/60 bg-background/80 p-6 shadow-sm">
             <div>
               <p className="text-xs uppercase tracking-wide text-muted-foreground">Email</p>
               <a
-                href="mailto:hello@ahmadfareed.design"
+                href="mailto:ahmadfareedui360@gmail.com"
                 className="mt-1 block text-base font-semibold text-foreground underline-offset-4 hover:text-primary hover:underline"
               >
-                hello@ahmadfareed.design
+                ahmadfareedui360@gmail.com
               </a>
             </div>
             <div>
@@ -67,7 +68,37 @@ export default function Footer() {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
+          <div className="flex flex-col gap-3 rounded-3xl border border-border/60 bg-background/80 p-6 shadow-sm">
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/ahmad-fareed.jpg"
+                  alt="Ahmad Fareed"
+                  width={48}
+                  height={48}
+                  className="h-12 w-12 rounded-full object-cover"
+                />
+                <div>
+                  <p className="text-sm font-semibold text-foreground">Ahmad Fareed</p>
+                  <p className="text-xs text-muted-foreground">Product Designer & Frontend Developer</p>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
+                <a href="mailto:ahmadfareedui360@gmail.com" className="underline underline-offset-4 hover:text-primary">
+                  ahmadfareedui360@gmail.com
+                </a>
+                <span>·</span>
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">
+                  LinkedIn
+                </a>
+                <a href="https://dribbble.com" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">
+                  Dribbble
+                </a>
+                <a href="https://behance.net" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">
+                  Behance
+                </a>
+              </div>
+            </div>
         </div>
 
         <div className="grid gap-6 border-t border-border/60 pt-6 md:grid-cols-[1fr_auto] md:items-center">
