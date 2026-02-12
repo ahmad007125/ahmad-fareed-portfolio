@@ -18,7 +18,7 @@ export function PortfolioCard({ project, index }: PortfolioCardProps) {
         index % 2 !== 0 && "md:flex-row-reverse"
       )}
     >
-      <div className="flex w-full max-w-xl flex-1 flex-col justify-between gap-6">
+      <div className="flex w-full max-w-[50%] flex-1 flex-col justify-between gap-6">
         <div className="space-y-4">
           <div className="flex items-center gap-3">
             <span className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.1em] text-primary">
@@ -48,9 +48,14 @@ export function PortfolioCard({ project, index }: PortfolioCardProps) {
               </span>
             )}
           </div>
-          <Button asChild className="w-max">
-            <Link href={`/portfolio/${project.slug}`}>View case study</Link>
-          </Button>
+          <div className="flex gap-2 items-center">
+            <Button asChild className="w-max rounded-full">
+              <Link href={`/portfolio/${project.slug}`}>View case study</Link>
+            </Button>
+            <Button variant="outline" asChild className="w-max rounded-full">
+              <Link href={`${project.liveLink}`} target="blank">Visit Website</Link>
+            </Button>
+          </div>
         </div>
       </div>
       <Card className="relative flex w-full flex-1 overflow-hidden rounded-2xl border border-border/70 bg-background/40 !py-0">

@@ -6,13 +6,13 @@ import { Sheet, SheetTrigger } from '@/components/ui/sheet'
 import Link from 'next/link'
 import { SheetContent } from './MobileNavSheetContent'
 import Image from 'next/image'
+import { Button } from '@/components/ui/button'
 
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/skills', label: 'Skills' },
   { href: '/portfolio', label: 'Portfolio' },
-  { href: '/contact', label: 'Contact' },
 ]
 
 export default function NavigationMenuDemo() {
@@ -40,7 +40,7 @@ export default function NavigationMenuDemo() {
           />
         </Link>
 
-        <nav className="hidden space-x-6 md:flex">
+        <nav className="hidden space-x-6 md:flex items-center">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -50,6 +50,9 @@ export default function NavigationMenuDemo() {
               {link.label}
             </Link>
           ))}
+          <Button asChild className="w-max rounded-full">
+              <Link href= "/contact">Contact</Link>
+          </Button>
         </nav>
 
         <div className="md:hidden cursor-pointer">
@@ -68,6 +71,9 @@ export default function NavigationMenuDemo() {
                     {link.label}
                   </Link>
                 ))}
+                <Button asChild className="w-max rounded-full">
+                  <Link href= "/contact">Contact</Link>
+                </Button>
               </div>
             </SheetContent>
           </Sheet>
