@@ -41,7 +41,7 @@ export default function HeroSection() {
           </div>
           <dl className="grid w-full gap-4 pt-4 grid-cols-2 sm:grid-cols-3 sm:max-w-lg">
             {highlights.map((item) => (
-              <div key={item.label} className="rounded-lg border border-border/60 bg-background/80 p-4 shadow-sm">
+              <div key={item.label} className="rounded-lg border border-border/60 bg-card/80 p-4 shadow-sm">
                 <dt className="text-xs uppercase tracking-wide text-muted-foreground">{item.label}</dt>
                 <dd className="text-2xl font-semibold text-foreground">{item.value}</dd>
               </div>
@@ -59,7 +59,7 @@ export default function HeroSection() {
               priority
               className="relative z-10 h-full w-full object-cover object-top"
             />
-            <div className="absolute bottom-4 left-4 right-4 z-20 rounded-xl bg-background/80 p-4 backdrop-blur">
+            <div className="absolute bottom-4 left-4 right-4 z-20 rounded-xl bg-card/80 p-4 backdrop-blur">
               <p className="text-xs uppercase tracking-wide text-muted-foreground">Toolbox</p>
               <p className="text-sm font-medium text-foreground">
                 Figma · Photoshop · React/Next.js UI · Tailwind 

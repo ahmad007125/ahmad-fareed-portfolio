@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import NavigationMenuDemo from "../components/Header"
+import Footer from "../components/Footer"
 
 const experience = [
   {
@@ -66,15 +67,15 @@ export default function AboutPage() {
               Over the last five years I&apos;ve partnered with SaaS startups, ecommerce brands, and enterprise teams to launch high-impact product initiatives. From facilitating discovery workshops to implementing design systems and production-ready code, I thrive at the intersection of design clarity and technical craft.
             </p>
             <div className="grid gap-4 sm:grid-cols-3">
-              <div className="rounded-2xl border border-border/70 bg-background/80 p-4">
+              <div className="rounded-2xl border border-border/70 bg-card/80 p-4">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Experience</p>
                 <p className="text-2xl font-semibold text-foreground">5+ years</p>
               </div>
-              <div className="rounded-2xl border border-border/70 bg-background/80 p-4">
+              <div className="rounded-2xl border border-border/70 bg-card/80 p-4">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Projects launched</p>
                 <p className="text-2xl font-semibold text-foreground">35+</p>
               </div>
-              <div className="rounded-2xl border border-border/70 bg-background/80 p-4">
+              <div className="rounded-2xl border border-border/70 bg-card/80 p-4">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Teams partnered</p>
                 <p className="text-2xl font-semibold text-foreground">20+</p>
               </div>
@@ -113,7 +114,7 @@ export default function AboutPage() {
             {experience.map((item) => (
               <div
                 key={`${item.company}-${item.timeframe}`}
-                className="rounded-2xl border border-border/60 bg-background/80 p-6 shadow-sm"
+                className="rounded-2xl border border-border/60 bg-card/80 p-6 shadow-sm"
               >
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <h3 className="text-lg font-semibold text-foreground">{item.company}</h3>
@@ -140,7 +141,7 @@ export default function AboutPage() {
             {principles.map((principle) => (
               <div
                 key={principle.title}
-                className="rounded-2xl border border-border/60 bg-background/80 p-6 shadow-sm transition hover:border-primary/40 hover:shadow-lg"
+                className="rounded-2xl border border-border/60 bg-card/80 p-6 shadow-sm transition hover:border-primary/40 hover:shadow-lg"
               >
                 <h3 className="text-lg font-semibold text-foreground">{principle.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{principle.description}</p>
@@ -159,7 +160,7 @@ export default function AboutPage() {
             </div>
             <div className="grid gap-6 md:grid-cols-3">
               {Object.entries(toolkit).map(([category, tools]) => (
-                <div key={category} className="rounded-2xl border border-border/40 bg-background/80 p-4 shadow-sm">
+                <div key={category} className="rounded-2xl border border-border/40 bg-card/80 p-4 shadow-sm">
                   <h3 className="text-sm font-semibold uppercase tracking-wide text-primary/80">{category}</h3>
                   <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                     {tools.map((tool) => (
@@ -189,6 +190,7 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   )
 }
