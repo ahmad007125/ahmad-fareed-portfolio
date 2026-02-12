@@ -20,7 +20,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="mt-16 border-t border-border/60 bg-body/70">
+    <footer className="border-t border-border/60 bg-body/70">
       <div className="container mx-auto flex flex-col gap-12 lg:px-12 sm:px-8 px-4 py-12 md:gap-16 md:py-16">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr] md:items-center">
           <div className="space-y-4">
@@ -110,7 +110,7 @@ export default function Footer() {
             ))}
           </nav>
           <p className="text-xs text-muted-foreground">
-            © {currentYear} Ahmad Fareed. Crafted with empathy, usability, and a little bit of TypeScript.
+            © {currentYear} Ahmad Fareed. Crafted with empathy and usability.
           </p>
         </div>
       </div>

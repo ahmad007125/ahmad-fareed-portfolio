@@ -80,7 +80,7 @@ export default function Home() {
                 title={skill.title}
                 description={skill.description}
                 image={skill.image}
-                focusAreas={skill.focusAreas}
+                // focusAreas={skill.focusAreas}
               />
             ))}
           </div>

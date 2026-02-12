@@ -15,6 +15,7 @@ export type ProjectCaseStudySection = {
 
 export type PortfolioProject = {
   slug: string
+  liveLink: string
   title: string
   industry: string
   year: string
@@ -36,9 +37,10 @@ export type PortfolioProject = {
 export const portfolioProjects: PortfolioProject[] = [
   {
     slug: "landsy-real-estate-platform",
+    liveLink: "https://www.figma.com/design/2mi1611BeLSD3S37H4fTtu/Real-Estate-Web-Design?node-id=0-1&t=6N5IJTV9w6bjpXkR-1",
     title: "Landsy Real Estate Platform",
-    industry: "PropTech",
-    year: "2024",
+    industry: "Real Estate",
+    year: "2025",
     summary:
       "A responsive real estate platform that lets buyers explore curated listings with personalized financing guidance.",
     excerpt:
@@ -89,17 +91,183 @@ export const portfolioProjects: PortfolioProject[] = [
     featured: true,
   },
   {
-    slug: "orbit-ecommerce-redesign",
-    title: "Orbit Commerce Experience",
-    industry: "E-commerce",
-    year: "2023",
+    slug: "ionic-x",
+    liveLink: "https://www.ionicx.io/",
+    title: "IonicX",
+    industry: "SaaS",
+    year: "2025",
+    summary:
+      "A guided onboarding and activation experience for a data analytics SaaS product serving product and growth teams.",
+    excerpt:
+      "Reduced activation friction by introducing contextual education, progressive data setup flows, and in-app lifecycle messaging.",
+    thumbnail: "/portfolio-4.jpg",
+    heroImage: "/portfolio-4.jpg",
+    services: ["UX Research", "Product Design", "Motion Design"],
+    techStack: ["Figma", "Framer", "Next.js", "Segment", "SendGrid"],
+    role: ["Product Designer"],
+    highlights: [
+      {
+        title: "Progressive profiling",
+        description:
+          "Split account setup into milestone-based steps with inline guidance and personalised recommendations.",
+      },
+      {
+        title: "Lifecycle orchestration",
+        description:
+          "Built experiment-ready messaging playbooks that tied product events to lifecycle email and in-app nudges.",
+      },
+    ],
+    stats: [
+      { label: "Day-7 activation", value: "+24%" },
+      { label: "Support tickets", value: "−31%" },
+      { label: "Onboarding time", value: "−45%" },
+    ],
+    challenge:
+      "Teams signed up but stalled before integrating data sources, which meant they never reached the aha moment that showcased Aurora’s value.",
+    outcome:
+      "By pairing onboarding flows with contextual education, Aurora’s activation rate improved and support load dropped substantially.",
+    caseStudy: [
+      {
+        heading: "Diagnosing drop-offs",
+        body:
+          "Instrumented funnel analytics and ran usability tests with new signups. Identified confusion around data connectors and a lack of clear success milestones.",
+      },
+      {
+        heading: "Designing guided flows",
+        body:
+          "Created a progressive onboarding experience with smart defaults and contextual support. Documented component behaviours for engineering handoff.",
+      },
+      {
+        heading: "Measuring success",
+        body:
+          "Partnered with growth to roll out the new onboarding in phases, measuring activation uplift and iterating on lifecycle messaging based on cohort analysis.",
+      },
+    ],
+    featured: false,
+  },
+  {
+    slug: "gyrate-digital",
+    liveLink: "https://gyratedigital.com/",
+    title: "Gyrate Digital",
+    industry: "SaaS",
+    year: "2025",
+    summary:
+      "A guided onboarding and activation experience for a data analytics SaaS product serving product and growth teams.",
+    excerpt:
+      "Reduced activation friction by introducing contextual education, progressive data setup flows, and in-app lifecycle messaging.",
+    thumbnail: "/portfolio-5.jpg",
+    heroImage: "/portfolio-5.jpg",
+    services: ["UX Research", "Product Design", "Motion Design"],
+    techStack: ["Figma", "Framer", "Next.js", "Segment", "SendGrid"],
+    role: ["Product Designer"],
+    highlights: [
+      {
+        title: "Progressive profiling",
+        description:
+          "Split account setup into milestone-based steps with inline guidance and personalised recommendations.",
+      },
+      {
+        title: "Lifecycle orchestration",
+        description:
+          "Built experiment-ready messaging playbooks that tied product events to lifecycle email and in-app nudges.",
+      },
+    ],
+    stats: [
+      { label: "Day-7 activation", value: "+24%" },
+      { label: "Support tickets", value: "−31%" },
+      { label: "Onboarding time", value: "−45%" },
+    ],
+    challenge:
+      "Teams signed up but stalled before integrating data sources, which meant they never reached the aha moment that showcased Aurora’s value.",
+    outcome:
+      "By pairing onboarding flows with contextual education, Aurora’s activation rate improved and support load dropped substantially.",
+    caseStudy: [
+      {
+        heading: "Diagnosing drop-offs",
+        body:
+          "Instrumented funnel analytics and ran usability tests with new signups. Identified confusion around data connectors and a lack of clear success milestones.",
+      },
+      {
+        heading: "Designing guided flows",
+        body:
+          "Created a progressive onboarding experience with smart defaults and contextual support. Documented component behaviours for engineering handoff.",
+      },
+      {
+        heading: "Measuring success",
+        body:
+          "Partnered with growth to roll out the new onboarding in phases, measuring activation uplift and iterating on lifecycle messaging based on cohort analysis.",
+      },
+    ],
+    featured: false,
+  },
+  {
+    slug: "lets-speak-up",
+    liveLink: "https://www.figma.com/design/Uvkc1Go2aMTRRh3HClZbWK/Let-s-Speak-Up?node-id=0-1&t=dvOogocJojZC0Uvn-1",
+    title: "Let's Speak Up",
+    industry: "Educational",
+    year: "2025",
+    summary:
+      "A guided onboarding and activation experience for a data analytics SaaS product serving product and growth teams.",
+    excerpt:
+      "Reduced activation friction by introducing contextual education, progressive data setup flows, and in-app lifecycle messaging.",
+    thumbnail: "/portfolio-6.jpg",
+    heroImage: "/portfolio-6.jpg",
+    services: ["UX Research", "Product Design", "Motion Design"],
+    techStack: ["Figma", "Framer", "Next.js", "Segment", "SendGrid"],
+    role: ["Product Designer"],
+    highlights: [
+      {
+        title: "Progressive profiling",
+        description:
+          "Split account setup into milestone-based steps with inline guidance and personalised recommendations.",
+      },
+      {
+        title: "Lifecycle orchestration",
+        description:
+          "Built experiment-ready messaging playbooks that tied product events to lifecycle email and in-app nudges.",
+      },
+    ],
+    stats: [
+      { label: "Day-7 activation", value: "+24%" },
+      { label: "Support tickets", value: "−31%" },
+      { label: "Onboarding time", value: "−45%" },
+    ],
+    challenge:
+      "Teams signed up but stalled before integrating data sources, which meant they never reached the aha moment that showcased Aurora’s value.",
+    outcome:
+      "By pairing onboarding flows with contextual education, Aurora’s activation rate improved and support load dropped substantially.",
+    caseStudy: [
+      {
+        heading: "Diagnosing drop-offs",
+        body:
+          "Instrumented funnel analytics and ran usability tests with new signups. Identified confusion around data connectors and a lack of clear success milestones.",
+      },
+      {
+        heading: "Designing guided flows",
+        body:
+          "Created a progressive onboarding experience with smart defaults and contextual support. Documented component behaviours for engineering handoff.",
+      },
+      {
+        heading: "Measuring success",
+        body:
+          "Partnered with growth to roll out the new onboarding in phases, measuring activation uplift and iterating on lifecycle messaging based on cohort analysis.",
+      },
+    ],
+    featured: false,
+  },
+    {
+    slug: "bank-tracker",
+    liveLink: "https://banktracker.de/",
+    title: "Bank Tracker Pro",
+    industry: "FinTech",
+    year: "2025",
     summary:
       "An end-to-end redesign of a multi-brand ecommerce storefront focused on conversion, merchandising flexibility, and storytelling.",
     excerpt:
       "Worked alongside marketing and engineering to rebuild the Orbit storefront—from IA and product discovery to checkout. Implemented the frontend with a performant Next.js architecture.",
-    thumbnail: "/portfolio-2.png",
-    heroImage: "/portfolio-2.png",
-    services: ["Experience Strategy", "UI Design", "Design System", "Frontend Development"],
+    thumbnail: "/bank-tracker.jpg",
+    heroImage: "/bank-tracker.jpg",
+    services: ["Responsiveness", "UI Enhancements", "Frontend Development"],
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Shopify Hydrogen", "Storybook"],
     role: ["Lead Product Designer", "Frontend Engineer"],
     highlights: [
@@ -142,18 +310,242 @@ export const portfolioProjects: PortfolioProject[] = [
     ],
     featured: true,
   },
+  // ===============================9t5 projects===============================
   {
-    slug: "aurora-saas-onboarding",
-    title: "Aurora SaaS Onboarding",
-    industry: "SaaS",
+    slug: "work-in-aus",
+    liveLink: "https://workinaus.com.au/",
+    title: "Work in Aus",
+    industry: "Jobs & Careers",
+    year: "2024",
+    summary:
+      "A guided onboarding and activation experience for a data analytics SaaS product serving product and growth teams.",
+    excerpt:
+      "Reduced activation friction by introducing contextual education, progressive data setup flows, and in-app lifecycle messaging.",
+    thumbnail: "/work-in-aus.jpg",
+    heroImage: "/work-in-aus.jpg",
+    services: ["Responsiveness", "UI Enhancements", "Frontend Development"],
+    techStack: ["Figma", "Framer", "Next.js", "Segment", "SendGrid"],
+    role: ["Product Designer"],
+    highlights: [
+      {
+        title: "Progressive profiling",
+        description:
+          "Split account setup into milestone-based steps with inline guidance and personalised recommendations.",
+      },
+      {
+        title: "Lifecycle orchestration",
+        description:
+          "Built experiment-ready messaging playbooks that tied product events to lifecycle email and in-app nudges.",
+      },
+    ],
+    stats: [
+      { label: "Day-7 activation", value: "+24%" },
+      { label: "Support tickets", value: "−31%" },
+      { label: "Onboarding time", value: "−45%" },
+    ],
+    challenge:
+      "Teams signed up but stalled before integrating data sources, which meant they never reached the aha moment that showcased Aurora’s value.",
+    outcome:
+      "By pairing onboarding flows with contextual education, Aurora’s activation rate improved and support load dropped substantially.",
+    caseStudy: [
+      {
+        heading: "Diagnosing drop-offs",
+        body:
+          "Instrumented funnel analytics and ran usability tests with new signups. Identified confusion around data connectors and a lack of clear success milestones.",
+      },
+      {
+        heading: "Designing guided flows",
+        body:
+          "Created a progressive onboarding experience with smart defaults and contextual support. Documented component behaviours for engineering handoff.",
+      },
+      {
+        heading: "Measuring success",
+        body:
+          "Partnered with growth to roll out the new onboarding in phases, measuring activation uplift and iterating on lifecycle messaging based on cohort analysis.",
+      },
+    ],
+    featured: false,
+  },
+  {
+    slug: "migration-marketplace",
+    liveLink: "https://migrationmarketplace.com.au/",
+    title: "Migration Marketplace",
+    industry: "Immigration",
+    year: "2024",
+    summary:
+      "A guided onboarding and activation experience for a data analytics SaaS product serving product and growth teams.",
+    excerpt:
+      "Reduced activation friction by introducing contextual education, progressive data setup flows, and in-app lifecycle messaging.",
+    thumbnail: "/migration-marketplace.jpg",
+    heroImage: "/migration-marketplace.jpg",
+    services: ["Responsiveness", "UI Enhancements", "Frontend Development"],
+    techStack: ["Figma", "Framer", "Next.js", "Segment", "SendGrid"],
+    role: ["Product Designer"],
+    highlights: [
+      {
+        title: "Progressive profiling",
+        description:
+          "Split account setup into milestone-based steps with inline guidance and personalised recommendations.",
+      },
+      {
+        title: "Lifecycle orchestration",
+        description:
+          "Built experiment-ready messaging playbooks that tied product events to lifecycle email and in-app nudges.",
+      },
+    ],
+    stats: [
+      { label: "Day-7 activation", value: "+24%" },
+      { label: "Support tickets", value: "−31%" },
+      { label: "Onboarding time", value: "−45%" },
+    ],
+    challenge:
+      "Teams signed up but stalled before integrating data sources, which meant they never reached the aha moment that showcased Aurora’s value.",
+    outcome:
+      "By pairing onboarding flows with contextual education, Aurora’s activation rate improved and support load dropped substantially.",
+    caseStudy: [
+      {
+        heading: "Diagnosing drop-offs",
+        body:
+          "Instrumented funnel analytics and ran usability tests with new signups. Identified confusion around data connectors and a lack of clear success milestones.",
+      },
+      {
+        heading: "Designing guided flows",
+        body:
+          "Created a progressive onboarding experience with smart defaults and contextual support. Documented component behaviours for engineering handoff.",
+      },
+      {
+        heading: "Measuring success",
+        body:
+          "Partnered with growth to roll out the new onboarding in phases, measuring activation uplift and iterating on lifecycle messaging based on cohort analysis.",
+      },
+    ],
+    featured: false,
+  },
+
+  // ===============================Applicon Soft Projects===============================
+  {
+    slug: "pioneer-auction",
+    liveLink: "https://pioneerauctions.ae/",
+    title: "Pioneer Auction",
+    industry: "Auctions & E-commerce",
+    year: "2021",
+    summary:
+      "A guided onboarding and activation experience for a data analytics SaaS product serving product and growth teams.",
+    excerpt:
+      "Reduced activation friction by introducing contextual education, progressive data setup flows, and in-app lifecycle messaging.",
+    thumbnail: "/pioneer-auction.jpg",
+    heroImage: "/pioneer-auction.jpg",
+    services: ["Responsiveness", "UI Enhancements", "Frontend Development"],
+    techStack: ["Html", "Css", "Bootstrap", "jQuery"],
+    role: ["Ui Engineer"],
+    highlights: [
+      {
+        title: "Progressive profiling",
+        description:
+          "Split account setup into milestone-based steps with inline guidance and personalised recommendations.",
+      },
+      {
+        title: "Lifecycle orchestration",
+        description:
+          "Built experiment-ready messaging playbooks that tied product events to lifecycle email and in-app nudges.",
+      },
+    ],
+    stats: [
+      { label: "Day-7 activation", value: "+24%" },
+      { label: "Support tickets", value: "−31%" },
+      { label: "Onboarding time", value: "−45%" },
+    ],
+    challenge:
+      "Teams signed up but stalled before integrating data sources, which meant they never reached the aha moment that showcased Aurora’s value.",
+    outcome:
+      "By pairing onboarding flows with contextual education, Aurora’s activation rate improved and support load dropped substantially.",
+    caseStudy: [
+      {
+        heading: "Diagnosing drop-offs",
+        body:
+          "Instrumented funnel analytics and ran usability tests with new signups. Identified confusion around data connectors and a lack of clear success milestones.",
+      },
+      {
+        heading: "Designing guided flows",
+        body:
+          "Created a progressive onboarding experience with smart defaults and contextual support. Documented component behaviours for engineering handoff.",
+      },
+      {
+        heading: "Measuring success",
+        body:
+          "Partnered with growth to roll out the new onboarding in phases, measuring activation uplift and iterating on lifecycle messaging based on cohort analysis.",
+      },
+    ],
+    featured: false,
+  },
+  {
+    slug: "bundl-design",
+    liveLink: "https://bundldesigns.com/",
+    title: "Bundl Designs",
+    industry: "Digital Design",
     year: "2022",
     summary:
       "A guided onboarding and activation experience for a data analytics SaaS product serving product and growth teams.",
     excerpt:
       "Reduced activation friction by introducing contextual education, progressive data setup flows, and in-app lifecycle messaging.",
-    thumbnail: "/portfolio-3.jpg",
-    heroImage: "/portfolio-3.jpg",
-    services: ["UX Research", "Product Design", "Motion Design"],
+    thumbnail: "/bundl-design.jpg",
+    heroImage: "/bundl-design.jpg",
+    services: ["Responsiveness", "UI Enhancements", "Frontend Development"],
+    techStack: ["Figma", "Framer", "Next.js", "Segment", "SendGrid"],
+    role: ["Product Designer"],
+    highlights: [
+      {
+        title: "Progressive profiling",
+        description:
+          "Split account setup into milestone-based steps with inline guidance and personalised recommendations.",
+      },
+      {
+        title: "Lifecycle orchestration",
+        description:
+          "Built experiment-ready messaging playbooks that tied product events to lifecycle email and in-app nudges.",
+      },
+    ],
+    stats: [
+      { label: "Day-7 activation", value: "+24%" },
+      { label: "Support tickets", value: "−31%" },
+      { label: "Onboarding time", value: "−45%" },
+    ],
+    challenge:
+      "Teams signed up but stalled before integrating data sources, which meant they never reached the aha moment that showcased Aurora’s value.",
+    outcome:
+      "By pairing onboarding flows with contextual education, Aurora’s activation rate improved and support load dropped substantially.",
+    caseStudy: [
+      {
+        heading: "Diagnosing drop-offs",
+        body:
+          "Instrumented funnel analytics and ran usability tests with new signups. Identified confusion around data connectors and a lack of clear success milestones.",
+      },
+      {
+        heading: "Designing guided flows",
+        body:
+          "Created a progressive onboarding experience with smart defaults and contextual support. Documented component behaviours for engineering handoff.",
+      },
+      {
+        heading: "Measuring success",
+        body:
+          "Partnered with growth to roll out the new onboarding in phases, measuring activation uplift and iterating on lifecycle messaging based on cohort analysis.",
+      },
+    ],
+    featured: false,
+  },
+  {
+    slug: "applicon-tech",
+    liveLink: "https://applicontech.com/",
+    title: "Applicon Tech",
+    industry: "IT Solutions",
+    year: "2023",
+    summary:
+      "A guided onboarding and activation experience for a data analytics SaaS product serving product and growth teams.",
+    excerpt:
+      "Reduced activation friction by introducing contextual education, progressive data setup flows, and in-app lifecycle messaging.",
+    thumbnail: "/applicon-tech.jpg",
+    heroImage: "/applicon-tech.jpg",
+    services: ["Responsiveness", "UI Enhancements", "Frontend Development"],
     techStack: ["Figma", "Framer", "Next.js", "Segment", "SendGrid"],
     role: ["Product Designer"],
     highlights: [

@@ -9,50 +9,29 @@ export type Skill = {
 export const skills: Skill[] = [
   {
     id: 1,
-    title: "Product & UX Strategy",
+    title: "UI/UX Design",
     description:
-      "Translating business goals and user insights into measurable product outcomes, user journeys, and north-star experience maps.",
+      "Crafting intuitive, user-centered digital experiences through research-driven design, wireframing, prototyping, and thoughtful usability testing.",
     image: "/ui-ux-design.png",
-    focusAreas: ["User research", "Journey mapping", "Experience audits"],
+    focusAreas: ["User research", "Journey mapping", "User-centered design", "Wireframing", "High-fidelity UI design", "Design systems", "Reusable components", "Prototyping", "Interaction design"],
   },
   {
     id: 2,
-    title: "Interface & Visual Design",
+    title: "Frontend Development",
     description:
-      "Designing elegant and accessible interfaces that express the brand while keeping usability, clarity, and conversion top of mind.",
+      "Building responsive, high-performance web interfaces with HTML5, CSS3, JavaScript, React, Next.js, and cross-browser compatibility.",
     image: "/graphic-design.png",
-    focusAreas: ["Design systems", "Responsive layouts", "Design ops"],
+    focusAreas: ["HTML5", "CSS3", "JavaScript & jQuery", "React.js & Next.js", "Tailwind CSS & ShadCN UI", "Responsive UI implementation", "Cross-browser and device compatibility"],
   },
   {
     id: 3,
-    title: "Frontend Engineering",
+    title: "Speed Optimization",
     description:
-      "Bringing high-fidelity product design to life with performant, scalable code using React, Next.js, and modern tooling.",
+      "Improving website speed by fixing performance bottlenecks, optimizing FCP & LCP, reducing render-blocking resources, and enhancing SEO.",
     image: "/web-development.png",
-    focusAreas: ["Next.js", "TypeScript", "Tailwind CSS"],
-  },
-  {
-    id: 4,
-    title: "Prototyping & Motion",
-    description:
-      "Validating product ideas quickly with interactive prototypes, detailed micro-interactions, and motion studies.",
-    image: "/globe.svg",
-    focusAreas: ["Figma prototypes", "Framer", "Usability testing"],
-  },
-  {
-    id: 5,
-    title: "Design Facilitation",
-    description:
-      "Leading collaborative workshops and sprint planning sessions that align product, engineering, and stakeholders.",
-    image: "/window.svg",
-    focusAreas: ["Design sprints", "Stakeholder alignment", "Team coaching"],
-  },
-  {
-    id: 6,
-    title: "Growth Experimentation",
-    description:
-      "Partnering with marketing teams to design, implement, and measure conversion experiments across key acquisition flows.",
-    image: "/file.svg",
-    focusAreas: ["Landing page optimization", "A/B testing", "Analytics"],
+    focusAreas: ["Speed optimization", "Identifying performance bottlenecks", "Optimizing render-blocking resources", "Improve FCP & LCP", "Efficient asset loading strategies", "Improve SEO"],
   },
 ]
+
+
+

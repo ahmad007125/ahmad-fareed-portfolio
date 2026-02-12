@@ -26,20 +26,23 @@ export default function PortfolioPage() {
           ))}
         </section>
 
-        <section className="rounded-3xl border border-border/60 bg-body/60 p-8 text-center md:p-12">
-          <h2 className="text-2xl font-semibold text-foreground md:text-3xl">
-            Looking for a case study tailored to your industry?
-          </h2>
-          <p className="mt-4 text-sm text-muted-foreground md:text-base">
-            I&apos;d love to share more detail about relevant work, walk through design files, or spin up a short discovery sprint together.
-          </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <Button asChild className="rounded-full px-6">
-              <Link href="/contact">Start a project conversation</Link>
-            </Button>
-            <Button asChild variant="outline" className="rounded-full px-6">
-              <Link href="/skills">See how I can help</Link>
-            </Button>
+        <section className="relative rounded-3xl bg-body/60 p-8 text-center md:p-12 bg-[url('/case-study.jpg')] bg-cover bg-center">
+          <div className="absolute inset-0 rounded-3xl bg-primary/80 brightness-75 contrast-110" />
+          <div className="relative z-10">
+            <h2 className="text-2xl font-semibold text-foreground md:text-3xl">
+              Looking for a case study tailored to your industry?
+            </h2>
+            <p className="mt-4 text-sm text-muted-foreground md:text-base">
+              I&apos;d love to share more detail about relevant work, walk through design files, or spin up a short discovery sprint together.
+            </p>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <Button asChild className="rounded-full px-6">
+                <Link href="/contact">Start a project conversation</Link>
+              </Button>
+              <Button asChild variant="outline" className="rounded-full px-6">
+                <Link href="/skills">See how I can help</Link>
+              </Button>
+            </div>
           </div>
         </section>
       </main>
