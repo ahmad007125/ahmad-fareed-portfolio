@@ -1,3 +1,4 @@
+import Footer from "../components/Footer"
 import NavigationMenuDemo from "../components/Header"
 import SkillCard from "../components/SkillCard"
 import { skills } from "../lib/skills"
@@ -76,7 +77,7 @@ export default function SkillsPage() {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col gap-4 rounded-2xl border border-border/40 bg-background/80 p-6 shadow-sm">
+            <div className="flex flex-col gap-4 rounded-2xl border border-border/40 bg-card/80 p-6 shadow-sm">
               <h3 className="text-lg font-semibold text-foreground">Need something specific?</h3>
               <p className="text-sm text-muted-foreground">
                 Let&apos;s chat about your roadmap, timelines, and what success looks like.
@@ -88,6 +89,7 @@ export default function SkillsPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   )
 }

@@ -1,6 +1,3 @@
-// 'use client'
-
-import * as React from 'react'
 import { Menu } from 'lucide-react'
 import { Sheet, SheetTrigger } from '@/components/ui/sheet'
 import Link from 'next/link'
@@ -17,9 +14,9 @@ const navLinks = [
 
 export default function NavigationMenuDemo() {
   return (
-    <header className="w-full bg-transparent bg-body sticky top-4 z-99">
+    <header className="w-full sticky top-0 z-99 bg-body/80 backdrop-blur-md rounded-xl border-b border-b-input overflow-hidden">
       <div className="container px-4 mx-auto">
-      <div className="mt-4 bg-body/80 backdrop-blur-md rounded-full flex items-center justify-between gap-2 py-2 md:py-3 lg:py-5 mx-auto px-8 xl:gap-4 transition-all duration-300 border border-input overflow-hidden">
+      <div className="flex items-center justify-between gap-2 py-2 md:py-3 lg:py-5 mx-auto px-8 xl:gap-4 transition-all duration-300">
 
         <Link href="/" className="text-xl font-bold text-primary">
           <Image

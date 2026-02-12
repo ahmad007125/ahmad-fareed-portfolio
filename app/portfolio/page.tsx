@@ -1,8 +1,10 @@
+import Footer from "../components/Footer"
 import NavigationMenuDemo from "../components/Header"
 import { PortfolioCard } from "../components/PortfolioCard"
 import { portfolioProjects } from "../lib/portfolio"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { Grid } from "../components/Svgs"
 
 export default function PortfolioPage() {
   return (
@@ -26,16 +28,18 @@ export default function PortfolioPage() {
           ))}
         </section>
 
-        <section className="relative rounded-3xl bg-body/60 p-8 text-center md:p-12 bg-[url('/case-study.jpg')] bg-cover bg-center">
-          <div className="absolute inset-0 rounded-3xl bg-primary/80 brightness-75 contrast-110" />
-          <div className="relative z-10">
-            <h2 className="text-2xl font-semibold text-foreground md:text-3xl">
+        <section className="relative rounded-3xl bg-secondary p-8 text-center md:p-12 overflow-hidden border border-primary/30">
+          <div className="absolute inset-0 rounded-3xl scale-x-[1.38] scale-y-[1.35] bottom-[-7px] opacity-[0.3]">
+             <Grid className="w-full h-auto absolute z-[-1]" />
+          </div>
+          <div className="relative z-10 flex flex-col items-center">
+            <h2 className="text-2xl font-semibold text-foreground md:text-3xl w-max bg-secondary p-1">
               Looking for a case study tailored to your industry?
             </h2>
-            <p className="mt-4 text-sm text-muted-foreground md:text-base">
+            <p className="text-sm text-muted-foreground md:text-base w-max bg-secondary p-1">
               I&apos;d love to share more detail about relevant work, walk through design files, or spin up a short discovery sprint together.
             </p>
-            <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <div className="mt-6 flex flex-wrap justify-center gap-3 bg-secondary">
               <Button asChild className="rounded-full px-6">
                 <Link href="/contact">Start a project conversation</Link>
               </Button>
@@ -46,6 +50,7 @@ export default function PortfolioPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   )
 }

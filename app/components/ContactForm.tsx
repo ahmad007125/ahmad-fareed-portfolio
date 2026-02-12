@@ -113,7 +113,7 @@ export default function ContactForm({ className, ...props }: React.ComponentProp
                   Based in Al Thuqbah, Eastern Saudi Arabia, collaborating remotely with teams across timezones in MENA, Europe, and North America.
                 </p>
               </div>
-              <div className="rounded-2xl border border-border/70 bg-background/80 p-4 shadow-sm">
+              <div className="rounded-2xl border border-border/70 bg-card/80 p-4 shadow-sm">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Project formats</p>
                 <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                   <li>• Product discovery sprints</li>
