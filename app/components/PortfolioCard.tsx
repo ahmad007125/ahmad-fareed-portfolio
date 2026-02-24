@@ -18,7 +18,7 @@ export function PortfolioCard({ project, index }: PortfolioCardProps) {
         index % 2 !== 0 && "md:flex-row-reverse"
       )}
     >
-      <div className="flex w-full max-w-[50%] flex-1 flex-col justify-between gap-6">
+      <div className="flex w-full md:max-w-[50%] max-w-full flex-1 flex-col justify-between gap-6 lg:px-12 md:px-8 px-4">
         <div className="space-y-4">
           <div className="flex items-center gap-3">
             <span className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.1em] text-primary">
