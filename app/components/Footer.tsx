@@ -41,7 +41,7 @@ export default function Footer() {
               </Button>
             </div>
           </div>
-          {/* <div className="grid gap-6 rounded-3xl border border-border/60 bg-card/80 p-6 shadow-sm">
+          {/* <div className="grid gap-6 rounded-3xl border border-border/60 bg-card/50 p-6 shadow-sm">
             <div>
               <p className="text-xs uppercase tracking-wide text-muted-foreground">Email</p>
               <a
@@ -69,7 +69,7 @@ export default function Footer() {
               ))}
             </div>
           </div> */}
-          <div className="flex flex-col gap-3 rounded-3xl border border-border/60 bg-card/80 p-6 shadow-sm">
+          <div className="flex flex-col gap-3 rounded-3xl border border-border/60 bg-card/50 p-6 shadow-sm">
               <div className="flex items-center gap-3">
                 <Image
                   src="/ahmad-fareed.jpg"

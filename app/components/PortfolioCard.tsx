@@ -14,7 +14,7 @@ export function PortfolioCard({ project, index }: PortfolioCardProps) {
   return (
     <article
       className={cn(
-        "group flex flex-col items-stretch gap-8 rounded-3xl border border-border/60 bg-card/80 p-6 shadow-sm transition hover:border-primary/40 hover:shadow-lg md:flex-row md:p-8",
+        "group flex flex-col items-stretch gap-8 rounded-3xl border border-border/60 bg-card/50 p-6 shadow-sm transition hover:border-primary/40 hover:shadow-lg md:flex-row md:p-8",
         index % 2 !== 0 && "md:flex-row-reverse"
       )}
     >

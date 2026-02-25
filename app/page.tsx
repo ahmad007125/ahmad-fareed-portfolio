@@ -111,7 +111,7 @@ export default function Home() {
           {process.map((step) => (
             <div
               key={step.title}
-              className="flex flex-col gap-3 rounded-2xl border border-border/70 bg-card/80 p-6 text-left shadow-sm"
+              className="flex flex-col gap-3 rounded-2xl border border-border/70 bg-card/50 p-6 text-left shadow-sm"
             >
               <h3 className="text-lg font-semibold text-foreground">{step.title}</h3>
               <p className="text-sm text-muted-foreground">{step.description}</p>
