@@ -15,7 +15,7 @@ export default function SkillCard({ title, description, image, focusAreas, class
   return (
     <div
       className={cn(
-        "flex h-full flex-col gap-4 rounded-2xl border border-border/60 bg-card/80 shadow-sm transition hover:border-primary/40 hover:shadow-lg overflow-hidden",
+        "flex h-full flex-col gap-4 rounded-2xl border border-border/60 bg-card/50 shadow-sm transition hover:border-primary/40 hover:shadow-lg overflow-hidden",
         className
       )}
     >

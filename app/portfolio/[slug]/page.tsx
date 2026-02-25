@@ -58,11 +58,11 @@ export default async function PortfolioDetailPage({ params }: PortfolioPageProps
             <h1 className="text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">{project.title}</h1>
             <p className="text-sm text-muted-foreground md:text-base">{project.excerpt}</p>
             <div className="flex flex-wrap gap-4">
-              <div className="rounded-2xl border border-border/70 bg-card/80 p-4">
+              <div className="rounded-2xl border border-border/70 bg-card/50 p-4">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Industry</p>
                 <p className="text-lg font-semibold text-foreground">{project.industry}</p>
               </div>
-              <div className="rounded-2xl border border-border/70 bg-card/80 p-4">
+              <div className="rounded-2xl border border-border/70 bg-card/50 p-4">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Year</p>
                 <p className="text-lg font-semibold text-foreground">{project.year}</p>
               </div>
@@ -102,7 +102,7 @@ export default async function PortfolioDetailPage({ params }: PortfolioPageProps
           {project.stats.map((stat) => (
             <div
               key={stat.label}
-              className="rounded-3xl border border-border/70 bg-card/80 p-6 text-center shadow-sm"
+              className="rounded-3xl border border-border/70 bg-card/50 p-6 text-center shadow-sm"
             >
               <p className="text-xs uppercase tracking-wide text-muted-foreground">{stat.label}</p>
               <p className="mt-2 text-3xl font-semibold text-foreground">{stat.value}</p>
@@ -135,7 +135,7 @@ export default async function PortfolioDetailPage({ params }: PortfolioPageProps
           {project.highlights.map((highlight) => (
             <div
               key={highlight.title}
-              className="rounded-3xl border border-border/60 bg-card/80 p-6 shadow-sm transition hover:border-primary/40 hover:shadow-lg"
+              className="rounded-3xl border border-border/60 bg-card/50 p-6 shadow-sm transition hover:border-primary/40 hover:shadow-lg"
             >
               <h3 className="text-lg font-semibold text-foreground">{highlight.title}</h3>
               <p className="mt-3 text-sm text-muted-foreground">{highlight.description}</p>

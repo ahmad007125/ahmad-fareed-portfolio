@@ -37,7 +37,7 @@ export default function ContactPage() {
               availability, and how we can structure a collaboration that fits your team.
             </p>
             <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
-              <div className="rounded-2xl border border-border/70 bg-card/80 p-4">
+              <div className="rounded-2xl border border-border/70 bg-card/50 p-4">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Email</p>
                 <a
                   href="mailto:ahmadfareedui360@gmail.com"
@@ -46,7 +46,7 @@ export default function ContactPage() {
                   ahmadfareedui360@gmail.com
                 </a>
               </div>
-              <div className="rounded-2xl border border-border/70 bg-card/80 p-4">
+              <div className="rounded-2xl border border-border/70 bg-card/50 p-4">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Location</p>
                 <p className="mt-1 text-base font-semibold text-foreground">Al Thuqbah, Eastern Saudi Arabia · Remote worldwide</p>
               </div>
@@ -61,7 +61,7 @@ export default function ContactPage() {
             <h2 className="text-xl font-semibold text-foreground md:text-2xl">Frequently asked</h2>
             <div className="mt-6 space-y-6">
               {faqs.map((faq) => (
-                <div key={faq.question} className="space-y-2 rounded-2xl border border-border/40 bg-card/80 p-4">
+                <div key={faq.question} className="space-y-2 rounded-2xl border border-border/40 bg-card/50 p-4">
                   <p className="text-sm font-medium text-foreground">{faq.question}</p>
                   <p className="text-sm text-muted-foreground">{faq.answer}</p>
                 </div>
