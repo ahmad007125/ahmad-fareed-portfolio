@@ -21,7 +21,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-border/60 bg-body/70">
-      <div className="container mx-auto flex flex-col gap-12 lg:px-12 sm:px-8 px-4 py-12 md:gap-16 md:py-16">
+      <div className="container mx-auto flex flex-col gap-12 md:gap-16 lg:px-12 sm:px-8 px-4 py-12 md:py-16">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr] md:items-center">
           <div className="space-y-4">
             <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary/80">Let&apos;s collaborate</p>
@@ -100,8 +100,9 @@ export default function Footer() {
               </div>
             </div>
         </div>
-
-        <div className="grid gap-6 border-t border-border/60 pt-6 md:grid-cols-[1fr_auto] md:items-center">
+      </div>
+      <div className="border-t border-border/60">
+        <div className="container mx-auto flex md:flex-row flex-col gap-x-12 gap-y-3 items-center justify-between lg:px-12 sm:px-8 px-4 py-6 md:py-8">
           <nav className="flex flex-wrap gap-4 text-sm text-muted-foreground">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className="transition hover:text-primary">

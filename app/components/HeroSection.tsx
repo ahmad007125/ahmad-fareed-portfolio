@@ -30,7 +30,7 @@ export default function HeroSection() {
               href="/portfolio"
               className="inline-flex h-11 items-center justify-center rounded-lg bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition hover:bg-primary/90"
             >
-              View Selected Work
+              View Portfolio Work
             </Link>
             <Link
               href="/contact"

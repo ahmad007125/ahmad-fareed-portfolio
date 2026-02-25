@@ -16,7 +16,7 @@ export default function NavigationMenuDemo() {
   return (
     <header className="w-full sticky top-0 z-99 bg-body/80 backdrop-blur-md border-b border-b-input overflow-hidden">
       <div className="container mx-auto">
-      <div className="flex items-center justify-between gap-2 py-2 md:py-3 lg:py-5 mx-auto lg:px-12 md:px-8 px-4 xl:gap-4 transition-all duration-300">
+      <div className="flex items-center justify-between gap-2 py-3 md:py-4 lg:py-5 mx-auto lg:px-12 md:px-8 px-4 xl:gap-4 transition-all duration-300">
 
         <Link href="/" className="text-xl font-bold text-primary">
           <Image
@@ -28,11 +28,11 @@ export default function NavigationMenuDemo() {
             priority
           />
           <Image
-            className="md:w-[50px] w-[40px] hidden dark:block"
+            className="md:w-[45px] w-[35px] hidden dark:block"
             src="/af-logo-dark.svg"
             alt="AF logo"
-            width={50}
-            height={39}
+            width={45}
+            height={35}
             priority
           />
         </Link>

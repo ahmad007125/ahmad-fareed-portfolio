@@ -38,26 +38,26 @@ export default function Home() {
       <HeroSection />
 
       <section className="container mx-auto flex flex-col gap-12 lg:px-12 sm:px-8 px-4 py-16 md:gap-16 md:py-20 lg:py-24">
-        <div className="flex flex-col items-start gap-4 text-left md:flex-row md:items-end md:justify-between">
-          <div>
-            <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary/80">
-              Selected Work
-            </p>
-            <h2 className="mt-2 text-3xl font-semibold text-foreground md:text-4xl">
-              Product experiences that balance craft and performance
-            </h2>
-          </div>
-          <Link
-            href="/portfolio"
-            className="inline-flex items-center rounded-full border border-border/70 px-5 py-2 text-sm font-medium text-muted-foreground transition hover:border-primary/40 hover:text-primary whitespace-nowrap"
-          >
-            Browse all projects
-          </Link>
+        <div className="text-center">
+          <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary/80">
+            Portfolio Work
+          </p>
+          <h2 className="mt-2 text-3xl font-semibold text-foreground md:text-4xl">
+            A Showcase of Strategic Design and Robust Frontend Engineering
+          </h2>
+          <p className="mt-3 max-w-xl text-sm text-muted-foreground md:text-base mx-auto">
+            Bridging strategy, design, and development into one cohesive digital experience that delivers clarity, performance, and measurable impact.
+          </p>
         </div>
-        <div className="flex flex-col gap-8 md:gap-12">
-          {featuredProjects.map((project, index) => (
-            <PortfolioCard key={project.slug} project={project} index={index} />
-          ))}
+        <div className="flex flex-col gap-8 items-center">
+          <div className="flex flex-col gap-8 md:gap-12">
+            {featuredProjects.map((project, index) => (
+              <PortfolioCard key={project.slug} project={project} index={index} />
+            ))}
+          </div>
+          <Button asChild className="w-max rounded-full">
+            <Link href="/portfolio">Browse all projects</Link>
+          </Button>
         </div>
       </section>
 
@@ -70,27 +70,25 @@ export default function Home() {
             <h2 className="mt-2 max-w-2xl text-3xl font-semibold text-foreground md:text-4xl">
               From UX strategy to production-ready interfaces, I ship the full stack of product design
             </h2>
-            <p className="mt-3 max-w-2xl text-sm text-muted-foreground md:text-base">
-              Here’s a snapshot of how I help teams move quickly, stay aligned, and launch experiences their users love.
+            <p className="mt-3 max-w-xl text-sm text-muted-foreground md:text-base">
+              Here's a snapshot of how I help teams move quickly, stay aligned, and launch experiences their users love.
             </p>
           </div>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {skills.slice(0, 6).map((skill) => (
-              <SkillCard
-                key={skill.id}
-                title={skill.title}
-                description={skill.description}
-                image={skill.image}
-                // focusAreas={skill.focusAreas}
-              />
-            ))}
-          </div>
-          <div className="flex justify-center">
-            <Link href="/skills">
-              <Button variant="outline" className="rounded-full px-6">
-                Explore the full skillset
-              </Button>
-            </Link>
+          <div className="flex flex-col gap-8 items-center">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {skills.slice(0, 6).map((skill) => (
+                <SkillCard
+                  key={skill.id}
+                  title={skill.title}
+                  description={skill.description}
+                  image={skill.image}
+                  // focusAreas={skill.focusAreas}
+                />
+              ))}
+            </div>
+            <Button asChild className="w-max rounded-full">
+              <Link href="/skills">Explore the full skillset</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -103,7 +101,7 @@ export default function Home() {
           <h2 className="mt-2 text-3xl font-semibold text-foreground md:text-4xl">
             A collaborative, insight-driven approach
           </h2>
-          <p className="mt-3 max-w-2xl text-sm text-muted-foreground md:text-base">
+          <p className="mt-3 max-w-xl text-sm text-muted-foreground md:text-base">
             Every engagement is tailored, but the pillars stay consistent—understand the problem, design the right solution, and ship with care.
           </p>
         </div>

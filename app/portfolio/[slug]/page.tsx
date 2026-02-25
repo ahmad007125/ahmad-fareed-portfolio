@@ -4,6 +4,8 @@ import { notFound } from "next/navigation"
 import NavigationMenuDemo from "../../components/Header"
 import { Button } from "@/components/ui/button"
 import { portfolioProjects } from "../../lib/portfolio"
+import { ArrowLeft } from "lucide-react"
+import Footer from "@/app/components/Footer"
 
 type PortfolioPageProps = {
   params: Promise<{ slug: string }>
@@ -53,36 +55,40 @@ export default async function PortfolioDetailPage({ params }: PortfolioPageProps
               href="/portfolio"
               className="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.1em] text-muted-foreground transition hover:text-primary"
             >
-              ← Back to portfolio
+              <ArrowLeft className="h-4 w-4" />
+              Back to portfolio
             </Link>
             <h1 className="text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">{project.title}</h1>
             <p className="text-sm text-muted-foreground md:text-base">{project.excerpt}</p>
-            <div className="flex flex-wrap gap-4">
-              <div className="rounded-2xl border border-border/70 bg-card/50 p-4">
+            <div className="flex sm:flex-row flex-col gap-4">
+              <div className="rounded-2xl border border-border/70 bg-card/50 p-4 flex-1">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Industry</p>
                 <p className="text-lg font-semibold text-foreground">{project.industry}</p>
               </div>
-              <div className="rounded-2xl border border-border/70 bg-card/50 p-4">
+              <div className="rounded-2xl border border-border/70 bg-card/50 p-4 flex-1">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Year</p>
                 <p className="text-lg font-semibold text-foreground">{project.year}</p>
               </div>
             </div>
-            <div className="flex flex-wrap gap-10">
-              <div>
-                <p className="text-xs uppercase tracking-wide text-muted-foreground">Roles</p>
-                <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-                  {project.role.map((role) => (
-                    <li key={role} className="text-foreground">{role}</li>
-                  ))}
-                </ul>
-              </div>
-              <div>
+            <div className="flex sm:flex-row flex-col gap-10">
+              <div className="flex-1">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Services</p>
                 <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
                   {project.services.map((service) => (
                     <li key={service} className="text-foreground">{service}</li>
                   ))}
                 </ul>
+              </div>
+              <div className="flex-1">
+                <p className="text-xs uppercase tracking-wide text-muted-foreground">Role</p>
+                <ul className="mt-2 space-y-1 text-sm text-muted-foreground mb-4">
+                  {project.role.map((role) => (
+                    <li key={role} className="text-foreground">{role}</li>
+                  ))}
+                </ul>
+            <Button asChild className="w-max rounded-full">
+              <Link href={`${project.liveLink}`} target="blank">Visit Website</Link>
+            </Button>
               </div>
             </div>
           </div>
@@ -172,6 +178,7 @@ export default async function PortfolioDetailPage({ params }: PortfolioPageProps
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   )
 }
