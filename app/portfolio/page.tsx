@@ -33,7 +33,7 @@ export default function PortfolioPage() {
              <Grid className="w-full h-auto absolute z-[-1]" />
           </div>
           <div className="relative z-10 flex flex-col items-center">
-            <h2 className="text-2xl font-semibold text-foreground md:text-3xl w-max bg-secondary p-1">
+            <h2 className="text-2xl font-semibold text-foreground md:text-3xl bg-secondary p-1">
               Looking for a case study tailored to your industry?
             </h2>
             <p className="text-sm text-muted-foreground md:text-base w-max bg-secondary p-1">
