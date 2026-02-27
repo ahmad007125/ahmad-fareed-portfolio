@@ -11,9 +11,9 @@ const navItems = [
 ]
 
 const socialLinks = [
-  { label: "LinkedIn", href: "https://www.linkedin.com" },
-  { label: "Dribbble", href: "https://dribbble.com" },
-  { label: "Behance", href: "https://behance.net" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/ahmad-fareed-ui" },
+  // { label: "Dribbble", href: "https://dribbble.com" },
+  { label: "Behance", href: "https://www.behance.net/ahmadansari41" },
 ]
 
 export default function Footer() {
@@ -88,13 +88,10 @@ export default function Footer() {
                   ahmadfareedui360@gmail.com
                 </a>
                 <span>·</span>
-                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">
+                <a href="https://www.linkedin.com/in/ahmad-fareed-ui" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">
                   LinkedIn
                 </a>
-                <a href="https://dribbble.com" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">
-                  Dribbble
-                </a>
-                <a href="https://behance.net" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">
+                <a href="https://www.behance.net/ahmadansari41" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">
                   Behance
                 </a>
               </div>
