@@ -23,7 +23,7 @@ export default function SkillsPage() {
           <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary/80">
             Capabilities
           </p>
-          <h1 className="text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">
+          <h1 className="text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl max-w-4xl mx-auto">
             A multidisciplinary toolkit for product teams
           </h1>
           <p className="mx-auto max-w-2xl text-sm text-muted-foreground md:text-base">

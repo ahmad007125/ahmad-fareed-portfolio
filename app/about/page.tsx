@@ -69,15 +69,15 @@ export default function AboutPage() {
             <div className="grid gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-border/70 bg-card/50 p-4">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Experience</p>
-                <p className="text-2xl font-semibold text-foreground">5+ years</p>
+                <p className="text-2xl font-semibold text-foreground">4+ years</p>
               </div>
               <div className="rounded-2xl border border-border/70 bg-card/50 p-4">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Projects launched</p>
-                <p className="text-2xl font-semibold text-foreground">35+</p>
+                <p className="text-2xl font-semibold text-foreground">15+</p>
               </div>
               <div className="rounded-2xl border border-border/70 bg-card/50 p-4">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Teams partnered</p>
-                <p className="text-2xl font-semibold text-foreground">20+</p>
+                <p className="text-2xl font-semibold text-foreground">10+</p>
               </div>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -104,7 +104,7 @@ export default function AboutPage() {
         </section>
 
         <section className="grid gap-10 md:grid-cols-2 md:gap-12">
-          <div className="space-y-4">
+          <div className="space-y-4 h-max sticky top-[100px]">
             <h2 className="text-2xl font-semibold text-foreground md:text-3xl">Experience snapshot</h2>
             <p className="text-sm text-muted-foreground md:text-base">
               I&apos;ve led and contributed to cross-functional teams across multiple industries. Here are a few of the roles that shaped how I work today.
@@ -130,7 +130,7 @@ export default function AboutPage() {
         </section>
 
         <section className="grid gap-12 md:grid-cols-2 md:items-start">
-          <div className="space-y-4">
+          <div className="space-y-4 h-max sticky top-[100px]">
             <h2 className="text-2xl font-semibold text-foreground md:text-3xl">How I partner with teams</h2>
             <p className="text-sm text-muted-foreground md:text-base">
               Success is a shared outcome. I embed with your team, help facilitate alignment,
