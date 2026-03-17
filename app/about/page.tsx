@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 const experience = [
   {
     company: "Freelance & Studio Collaborations",
-    role: "Product Designer & Frontend Developer",
+    role: "UI/UX Designer & Frontend Developer",
     timeframe: "2021 — Present",
     summary:
       "Partnering with SaaS founders, product teams, and creative studios to launch end-to-end product experiences and design systems.",

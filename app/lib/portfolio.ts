@@ -49,7 +49,7 @@ export const portfolioProjects: PortfolioProject[] = [
     heroImage: "/landsy-homepage.jpg",
     services: ["UX Research", "Product Design", "Design System", "UI Design"],
     techStack: ["Figma", "Adobe Illustrator", "Adobe Photoshop"],
-    role: ["Product Designer", "UI Designer"],
+    role: ["UI/UX Designer", "UI Designer"],
     highlights: [
       {
         title: "Unified discovery flow",
@@ -104,7 +104,7 @@ export const portfolioProjects: PortfolioProject[] = [
     heroImage: "/portfolio-4.jpg",
     services: ["UX Research", "Product Design", "UI Design", "Frontend Design", "Vercel Deployment"],
     techStack: ["Figma", "Adobe Photoshop", "Next.js", "Tailwind CSS", "ShadCN"],
-    role: ["Product Designer and Developer"],
+    role: ["UI/UX Designer and Developer"],
     highlights: [
   {
     title: "AI-Powered Design Experience",
@@ -401,7 +401,7 @@ export const portfolioProjects: PortfolioProject[] = [
     heroImage: "/work-in-aus.jpg",
     services: ["Responsiveness", "UI Enhancements", "Frontend Development"],
     techStack: ["Figma", "Framer", "Next.js", "Segment", "SendGrid"],
-    role: ["Product Designer"],
+    role: ["UI/UX Designer"],
     highlights: [
       {
         title: "Progressive profiling",
