@@ -80,7 +80,7 @@ export default function Footer() {
                 />
                 <div>
                   <p className="text-sm font-semibold text-foreground">Ahmad Fareed</p>
-                  <p className="text-xs text-muted-foreground">Product Designer & Frontend Developer</p>
+                  <p className="text-xs text-muted-foreground">UI/UX Designer & Frontend Developer</p>
                 </div>
               </div>
               <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
