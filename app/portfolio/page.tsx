@@ -13,7 +13,7 @@ export default function PortfolioPage() {
       <main className="container mx-auto flex flex-col gap-16 lg:px-12 sm:px-8 px-4 py-16 md:gap-20 md:py-20 lg:py-24">
         <section className="flex flex-col gap-4 text-center">
           <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary/80">Portfolio</p>
-          <h1 className="text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">
+          <h1 className="text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl max-w-4xl mx-auto">
             A selection of product work across SaaS, ecommerce, and growth.
           </h1>
           <p className="mx-auto max-w-2xl text-sm text-muted-foreground md:text-base">
