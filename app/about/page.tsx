@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 const experience = [
   {
     company: "Freelance & Studio Collaborations",
-    role: "UI/UX Designer & Frontend Developer",
+    role: "Graphic Designer, UI/UX Designer & Frontend Developer",
     timeframe: "2021 — Present",
     summary:
       "Partnering with SaaS founders, product teams, and creative studios to launch end-to-end product experiences and design systems.",
@@ -104,7 +104,7 @@ export default function AboutPage() {
         </section>
 
         <section className="grid gap-10 md:grid-cols-2 md:gap-12">
-          <div className="space-y-4 h-max sticky top-[100px]">
+          <div className="space-y-4 h-max md:sticky top-[100px]">
             <h2 className="text-2xl font-semibold text-foreground md:text-3xl">Experience snapshot</h2>
             <p className="text-sm text-muted-foreground md:text-base">
               I&apos;ve led and contributed to cross-functional teams across multiple industries. Here are a few of the roles that shaped how I work today.
@@ -130,7 +130,7 @@ export default function AboutPage() {
         </section>
 
         <section className="grid gap-12 md:grid-cols-2 md:items-start">
-          <div className="space-y-4 h-max sticky top-[100px]">
+          <div className="space-y-4 h-max md:sticky top-[100px]">
             <h2 className="text-2xl font-semibold text-foreground md:text-3xl">How I partner with teams</h2>
             <p className="text-sm text-muted-foreground md:text-base">
               Success is a shared outcome. I embed with your team, help facilitate alignment,

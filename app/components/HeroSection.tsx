@@ -15,7 +15,7 @@ export default function HeroSection() {
       <div className="container mx-auto flex flex-col items-center gap-10 lg:px-12 md:px-8 px-4 py-16 md:flex-row md:gap-16 md:py-20 lg:py-24">
         <div className="flex w-full flex-1 flex-col gap-6">
           <span className="max-w-max rounded-full border border-primary/20 bg-primary/10 px-4 py-1 text-xs font-medium uppercase tracking-[0.1em] text-primary">
-            UI/UX Designer & Frontend Developer
+            Graphic Designer, UI/UX Designer & Frontend Developer
           </span>
           <h1 className="max-w-2xl text-4xl font-semibold leading-tight text-foreground md:text-5xl lg:text-[3.25rem] lg:leading-[1.1]">
             I design conversion-focused experiences and build them with modern web tech.
@@ -62,7 +62,7 @@ export default function HeroSection() {
             <div className="absolute bottom-4 left-4 right-4 z-20 rounded-xl bg-card/50 p-4 backdrop-blur">
               <p className="text-xs uppercase tracking-wide text-muted-foreground">Toolbox</p>
               <p className="text-sm font-medium text-foreground">
-                Figma · Photoshop · React/Next.js UI · Tailwind 
+                Photoshop · Illustrator · Figma · React/Next.js UI · Tailwind 
               </p>
             </div>
           </div>

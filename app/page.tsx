@@ -42,7 +42,7 @@ export default function Home() {
           <p className="text-sm font-medium uppercase tracking-[0.1em] text-primary/80">
             Portfolio Work
           </p>
-          <h2 className="mt-2 text-3xl font-semibold text-foreground md:text-4xl">
+          <h2 className="mt-2 max-w-2xl mx-auto text-3xl font-semibold text-foreground md:text-4xl">
             A Showcase of Strategic Design and Robust Frontend Engineering
           </h2>
           <p className="mt-3 max-w-xl text-sm text-muted-foreground md:text-base mx-auto">

@@ -1,5 +1,5 @@
-import { Menu } from 'lucide-react'
-import { Sheet, SheetTrigger } from '@/components/ui/sheet'
+import { Menu, X } from 'lucide-react'
+import { Sheet, SheetClose, SheetTrigger } from '@/components/ui/sheet'
 import Link from 'next/link'
 import { SheetContent } from './MobileNavSheetContent'
 import Image from 'next/image'
@@ -22,7 +22,7 @@ export default function NavigationMenuDemo() {
           <Image
             className="md:w-[50px] w-[40px] block dark:hidden"
             src="/af-logo.svg"
-            alt="AF logo"
+            alt="AF logo" 
             width={50}
             height={39}
             priority
@@ -57,8 +57,25 @@ export default function NavigationMenuDemo() {
             <SheetTrigger asChild>
                 <Menu strokeWidth={1.5} size={32} className="color-foreground" />
             </SheetTrigger>
-            <SheetContent side="left" className="w-[250px] bg-background z-99">
-              <div className="flex flex-col gap-4 mt-6">
+            <SheetContent side="left" className="w-[250px] bg-background z-99 [&>button]:hidden p-0">
+              <div className="sidebar-header flex justify-between items-center px-4 py-3 border-b">
+                <Link href="/" className="text-xl font-bold text-primary w-max">
+                  <Image
+                    className="md:w-[45px] w-[35px] hidden dark:block"
+                    src="/af-logo-dark.svg"
+                    alt="AF logo"
+                    width={45}
+                    height={35}
+                    priority
+                  />
+                </Link>
+                <SheetClose asChild>
+                  <button className="!flex">
+                    <X size={32} strokeWidth={1.5} />
+                  </button>
+                </SheetClose>
+              </div>
+              <div className="flex flex-col gap-4 mt-4 px-4">
                 {navLinks.map((link) => (
                   <Link
                     key={link.href}
