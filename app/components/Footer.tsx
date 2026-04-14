@@ -80,7 +80,7 @@ export default function Footer() {
                 />
                 <div>
                   <p className="text-sm font-semibold text-foreground">Ahmad Fareed</p>
-                  <p className="text-xs text-muted-foreground">UI/UX Designer & Frontend Developer</p>
+                  <p className="text-xs text-muted-foreground">Graphic Designer, UI/UX Designer & Frontend Developer</p>
                 </div>
               </div>
               <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
@@ -88,9 +88,14 @@ export default function Footer() {
                   ahmadfareedui360@gmail.com
                 </a>
                 <span>·</span>
+                <a href="https://wa.me/966545254268" target="_blank" className="underline underline-offset-4 hover:text-primary">
+                  +966 545254268
+                </a>
+                <span>·</span>
                 <a href="https://www.linkedin.com/in/ahmad-fareed-ui" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">
                   LinkedIn
                 </a>
+                <span>·</span>
                 <a href="https://www.behance.net/ahmadansari41" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">
                   Behance
                 </a>

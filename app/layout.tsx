@@ -13,18 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ahmad Fareed | UI/UX Designer & Frontend Developer",
+  title: "Ahmad Fareed | Graphic Designer, UI/UX Designer & Frontend Developer",
   description:
     "Portfolio of Ahmad Fareed, a UI/UX Designer and frontend developer crafting conversion-focused experiences with Figma, Next.js, and Tailwind CSS.",
   openGraph: {
-    title: "Ahmad Fareed | UI/UX Designer & Frontend Developer",
+    title: "Ahmad Fareed | Graphic Designer, UI/UX Designer & Frontend Developer",
     description:
       "Explore selected projects, case studies, and services from Ahmad Fareed — combining UX strategy, product design, and modern frontend engineering.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ahmad Fareed | UI/UX Designer & Frontend Developer",
+    title: "Ahmad Fareed | Graphic Designer, UI/UX Designer & Frontend Developer",
     description:
       "UI/UX Designer and frontend developer turning complex problems into beautiful, high-performing digital products.",
   },
