@@ -68,9 +68,17 @@ export default function NavigationMenuDemo() {
                     height={35}
                     priority
                   />
+                  <Image
+                    className="md:w-[50px] w-[40px] block dark:hidden"
+                    src="/af-logo.svg"
+                    alt="AF logo" 
+                    width={45}
+                    height={35}
+                    priority
+                  />
                 </Link>
                 <SheetClose asChild>
-                  <button className="!flex">
+                  <button className="flex !flex">
                     <X size={32} strokeWidth={1.5} />
                   </button>
                 </SheetClose>
