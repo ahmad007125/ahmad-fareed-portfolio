@@ -6,25 +6,25 @@ import Footer from "../components/Footer"
 
 const experience = [
   {
-    company: "Freelance & Studio Collaborations",
-    role: "Graphic Designer, UI/UX Designer & Frontend Developer",
-    timeframe: "2021 — Present",
+    company: "Gyrate Digital",
+    role: "UI/UX Designer & Frontend Developer",
+    timeframe: "March 2025 — Present",
     summary:
-      "Partnering with SaaS founders, product teams, and creative studios to launch end-to-end product experiences and design systems.",
+      "As a UI/UX Designer and Frontend Developer, I delivered responsive and high-performance interfaces under tight deadlines. I designed and built user-friendly experiences using Next.js and Tailwind CSS, ensuring fast, scalable, and consistent performance across all devices.",
   },
   {
-    company: "Nova Creative",
-    role: "Senior UI/UX Designer",
-    timeframe: "2019 — 2021",
+    company: "9T5 Pty Ltd",
+    role: "Frontend UI developer",
+    timeframe: "December 2023 — February 2025",
     summary:
-      "Led multidisciplinary squads delivering marketing sites, ecommerce storefronts, and growth experimentation for international clients.",
+      "As a Frontend Developer, I ensured consistent UI behavior across different browsers and devices within an existing Blade template structure. Using HTML, CSS, and jQuery, I improved layouts and responsiveness to deliver a more stable and user-friendly interface.",
   },
   {
-    company: "Pixel Forge",
-    role: "Frontend Engineer",
-    timeframe: "2017 — 2019",
+    company: "AppliconSoft",
+    role: "UI Developer",
+    timeframe: "March 2021 — December 2023",
     summary:
-      "Implemented component libraries, accessibility practices, and performance optimisations for large-scale web applications.",
+      "As a UI Developer, I built responsive and high-performance interfaces across multiple platforms. Using WordPress, PHP, HTML, CSS, and JavaScript/jQuery, I optimized layouts and front-end code to deliver fast, stable, and user-friendly experiences.",
   },
 ]
 
@@ -67,15 +67,15 @@ export default function AboutPage() {
               Over the last five years I&apos;ve partnered with SaaS startups, ecommerce brands, and enterprise teams to launch high-impact product initiatives. From facilitating discovery workshops to implementing design systems and production-ready code, I thrive at the intersection of design clarity and technical craft.
             </p>
             <div className="grid gap-4 sm:grid-cols-3">
-              <div className="rounded-2xl border border-border/70 bg-card/50 p-4">
+              <div className="rounded-2xl border border-border/70 bg-card/50 p-4 space-y-1">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Experience</p>
                 <p className="text-2xl font-semibold text-foreground">4+ years</p>
               </div>
-              <div className="rounded-2xl border border-border/70 bg-card/50 p-4">
+              <div className="rounded-2xl border border-border/70 bg-card/50 p-4 space-y-1">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Projects launched</p>
                 <p className="text-2xl font-semibold text-foreground">15+</p>
               </div>
-              <div className="rounded-2xl border border-border/70 bg-card/50 p-4">
+              <div className="rounded-2xl border border-border/70 bg-card/50 p-4 space-y-1">
                 <p className="text-xs uppercase tracking-wide text-muted-foreground">Teams partnered</p>
                 <p className="text-2xl font-semibold text-foreground">10+</p>
               </div>
