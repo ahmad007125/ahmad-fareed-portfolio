@@ -37,7 +37,7 @@ export default function PortfolioPage() {
             <h2 className="text-2xl font-semibold text-foreground md:text-3xl bg-secondary p-1">
               Looking for a case study tailored to your industry?
             </h2>
-            <p className="text-sm text-muted-foreground md:text-base w-max bg-secondary p-1">
+            <p className="text-sm text-muted-foreground md:text-base bg-secondary p-1">
               I&apos;d love to share more detail about relevant work, walk through design files, or spin up a short discovery sprint together.
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3 bg-secondary">
