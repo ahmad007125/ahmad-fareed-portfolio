@@ -28,10 +28,11 @@ export default function PortfolioPage() {
           ))}
         </section>
 
-        <section className="relative rounded-3xl bg-secondary p-8 text-center md:p-12 overflow-hidden border border-primary/30">
-          <div className="absolute inset-0 rounded-3xl scale-x-[1.38] scale-y-[1.35] bottom-[-7px] opacity-[0.3]">
+        {/* <section className="relative rounded-3xl bg-secondary p-8 text-center md:p-12 overflow-hidden border border-primary/30"> */}
+          {/* <div className="absolute inset-0 rounded-3xl scale-x-[1.38] scale-y-[1.35] bottom-[-7px] opacity-[0.3]">
              <Grid className="w-full h-auto absolute z-[-1]" />
-          </div>
+          </div> */}
+        <section className="relative rounded-3xl bg-secondary p-8 text-center md:p-12 overflow-hidden border border-primary/30">
           <div className="relative z-10 flex flex-col items-center">
             <h2 className="text-2xl font-semibold text-foreground md:text-3xl bg-secondary p-1">
               Looking for a case study tailored to your industry?
