@@ -88,8 +88,8 @@ export default function Footer() {
                   ahmadfareedui360@gmail.com
                 </a>
                 <span>·</span>
-                <a href="https://wa.me/966545254268" target="_blank" className="underline underline-offset-4 hover:text-primary">
-                  +966 545254268
+                <a href="https://wa.me/966541515214" target="_blank" className="underline underline-offset-4 hover:text-primary">
+                  +966 541515214
                 </a>
                 <span>·</span>
                 <a href="https://www.linkedin.com/in/ahmad-fareed-ui" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">
