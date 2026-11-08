@@ -94,7 +94,7 @@ export default function NavigationMenuDemo() {
                   </Link>
                 ))}
                 <Button asChild className="w-max rounded-full">
-                  <Link href= "/contact">Contact</Link>
+                  <Link href= "/contact">Contacts</Link>
                 </Button>
               </div>
             </SheetContent>
